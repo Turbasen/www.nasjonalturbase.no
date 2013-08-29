@@ -5,3 +5,4 @@ echo "installing ruby gems"
 gem install nanoc
 gem install adsf
 gem install github-pages
+gem install kramdown
