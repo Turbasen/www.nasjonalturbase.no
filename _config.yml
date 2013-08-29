@@ -1,0 +1,4 @@
+name: Nasjonal Turbase
+markdown: redcarpet
+pygments: true
+safe: true
