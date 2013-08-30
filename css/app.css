@@ -35,12 +35,20 @@ h2.glyphicons::before {
 }
 
 /* Jumbotron - Blue */
-.jumbotron.blue    { background-color: rgb(93, 169, 221); }
-.jumbotron.blue h1 { color: #fff; }
+.jumbotron.blue     { background-color: rgb(93, 169, 221); }
+.jumbotron.blue h1  { color: #fff; }
+
+/* Jumbotron - Green */
+.jumbotron.green    { background-color: rgb(183, 219, 193); }
+.jumbotron.green h1 { color: #fff; }
 
 /* Jumbotron - Red */
-.jumbotron.red     { background-color: rgb(183, 219, 193); }
-.jumbotron.red h1  { color: #fff; }
+.jumbotron.red     { background-color: rgb(107, 58, 55); }
+.jumbotron.red h1,
+.jumbotron.red h2 { color: #fff; }
+
+/* Jumbotron - Warning */
+.jumbotron.warning { margin: 0; padding: 0 0 10px 0; }
 
 /* Jumbotron - Left */
 .jumbotron.left h1 { text-align: left; }

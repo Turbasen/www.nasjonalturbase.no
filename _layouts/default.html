@@ -43,14 +43,16 @@
           </div><!--/.navbar-collapse -->
       </div>
     </div>
-    
+
+    {% include jumbo-trone.html align="left" color="red" type="warning" %}
+
     {% if page.url == '/index.html' %}
       {% include jumbo-trone.html align="left" color="blue" type="intro" %}  
     {% endif %}
 
     <div class="container">{{ content }}</div>
 
-    {% include jumbo-trone.html align="right" color="red" type="partners" %}
+    {% include jumbo-trone.html align="right" color="green" type="partners" %}
 
     <div class="container">
 

@@ -3,6 +3,8 @@
     {% case include.type %} 
       {% when 'intro' %} 
         {% include jumbotron-intro.html %}
+      {% when 'warning' %} 
+        {% include jumbotron-warning.html %}
       {% when 'partners' %} 
         {% include jumbotron-partners.html %}
       {% else %} 
