@@ -1,0 +1,13 @@
+<div class="jumbotron {{ include.align }} {{ include.color }} {{ include.type }}">
+  <div class="container">
+    {% case include.type %} 
+      {% when 'intro' %} 
+        {% include jumbotron-intro.html %}
+      {% when 'partners' %} 
+        {% include jumbotron-partners.html %}
+      {% else %} 
+        {% include jumbotron-intro.html %}
+    {% endcase %} 
+  </div>
+</div>
+

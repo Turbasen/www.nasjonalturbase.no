@@ -12,6 +12,7 @@
     
     <link rel="stylesheet" href="/css/syntax.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/glyphicons.css">
     <link rel="stylesheet" href="/css/app.css">
 
   </head>
@@ -30,46 +31,39 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             {% for p in site.pages %}
-              {% if page.url == p.url %}
-                <li class="active"><a href="{{ p.url }}">{{ p.title }}</a></li>
-              {% else %}
-                <li><a href="{{ p.url }}">{{ p.title }}</a></li>
-              {% endif %}
+              {% unless p.url == '/index.html' %}
+                {% if page.url == p.url %}
+                  <li class="active"><a href="{{ p.url }}">{{ p.title }}</a></li>
+                {% else %}
+                  <li><a href="{{ p.url }}">{{ p.title }}</a></li>
+                {% endif %}
+              {% endunless %}
             {% endfor %}
-
-            <!-- <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li> -->
           </ul>
           </div><!--/.navbar-collapse -->
       </div>
     </div>
+    
+    {% if page.url == '/index.html' %}
+      {% include jumbo-trone.html align="left" color="blue" type="intro" %}  
+    {% endif %}
 
-     <div class="jumbotron">
-      <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-      </div>
-    </div>
+    <div class="container">{{ content }}</div>
+
+    {% include jumbo-trone.html align="right" color="red" type="partners" %}
 
     <div class="container">
-
-      {{ content }}
 
       <hr>
 
       <footer>
-        <p>&copy; Company 2013</p>
+
+        <p>&copy; Nasjonal Turbase 2013</p>
+
+        <p>Except where otherwise noted, content on this site is licensed under
+        a <a href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons
+        CC-BY license</a>.</p>
+
       </footer>
 
     </div> <!-- /container -->

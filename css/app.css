@@ -3,3 +3,55 @@ body {
   padding-bottom: 20px;
 }
 
+body > .container {
+  margin-bottom: 30px;
+}
+
+h2.glyphicons {
+  padding-left: 35px;
+}
+
+h2.glyphicons::before {
+  margin: 5px 0 0 0;
+}
+
+/* Jumbotron */
+.jumbotron h1 {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.jumbotron p {
+  text-align: justify;
+}
+
+/* Jumbotron - Blue */
+.jumbotron.blue    { background-color: rgb(93, 169, 221); }
+.jumbotron.blue h1 { color: #fff; }
+
+/* Jumbotron - Red */
+.jumbotron.red     { background-color: rgb(183, 219, 193); }
+.jumbotron.red h1  { color: #fff; }
+
+/* Jumbotron - Left */
+.jumbotron.left h1 { text-align: left; }
+.jumbotron.left .glyphicons.grande { float: right; padding-left: 20px; }
+
+/* Jumbotron - Right */
+.jumbotron.right h1 { text-align: right; }
+.jumbotron.right .glyphicons.grande { float: left; padding-left: 20px; }
+
+/* Jumbotron Glyphicons */
+.jumbotron .glyphicons.grande {
+  padding: 0;
+  margin: 0;
+}
+
+.jumbotron .glyphicons.grande::before {
+  position: inherit;
+  left: 0;
+  right: 0;
+  margin: 0;
+  font-size: 200px;
+}
+
