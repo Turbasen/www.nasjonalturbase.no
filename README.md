@@ -5,10 +5,17 @@ Public website for the National Trip Database (Nasjonal Turbase) project contain
 
 ### Running locally
 
+Run the website locally over port 3000.
+
 ```shell
 vagrant up
 vagrant ssh
-nanoc compile
-nanoc view
+jekyll serve -w
+```
+
+### Push changes
+
+```shell
+git push origin gh-pages
 ```
 
