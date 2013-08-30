@@ -7,6 +7,15 @@ body > .container {
   margin-bottom: 30px;
 }
 
+footer ul {
+  display: table-cell;
+}
+
+footer ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
 h2.glyphicons {
   padding-left: 35px;
 }
