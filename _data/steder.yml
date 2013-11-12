@@ -4,45 +4,270 @@
   write: Ingen
   desc: Autogenerert unik ID (ObjectID)
   com: Legges automatisk inn av Nasjonal Turbase
-  ut: 
+  utsted:
+  uthytte:
 
 - name: tilbyder
   type: string
   read: Alle
   write: Ingen
-  desc: 
-  com: 
-  ut: 
+  desc: Innholdsleverand&oslash;r som har lagt inn stedet 
+  com: Legges automatisk inn av Nasjonal Turbase
+  utsted:
+  uthytte:
 
-- name: 
+- name: opprettet
   type: string
   read: Alle
   write: Ingen
-  desc: 
-  com: 
-  ut: 
+  desc: Tid og dato for opprettet (ISO 8601)
+  com: Legges automatisk inn av Nasjonal Turbase
+  utsted:
+  uthytte:
 
-- name: 
+- name: endret
   type: string
   read: Alle
   write: Ingen
-  desc: 
-  com: 
-  ut: 
+  desc: Tid og dato for sist endret (ISO 8601)
+  com: Legges automatisk inn av Nasjonal Turbase
+  utsted:
+  uthytte:
 
-- name:  
+- name: lisens
   type: string
   read: Alle
-  write: Ingen
-  desc: 
-  com: 
-  ut: 
+  write: Tilbyder
+  desc: Lisens for bruk og visning av stedet
+  values: ["CC BY 3.0 NO", "CC BY-NC 3.0 NO", "CC BY-ND 3.0 NO", "CC BY-NC-ND 3.0 NO"]
+  utsted: P&aring;krevd
+  uthytte: P&aring;krevd
 
-- name:  
+- name: navngivning
   type: string
   read: Alle
-  write: Ingen
+  write: Tilbyder
+  desc: Tekst som skal vises om valgt lisens stiller krav til navngiving
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: status
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Publiseringsstatus
+  values: [Kladd, Privat, Offentlig, Slettet]
+  utsted: P&aring;krevd
+  uthytte: P&aring;krevd
+
+- name: navn
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Navn p&aring; stedet
+  utsted: P&aring;krevd
+  uthytte: P&aring;krevd
+
+- name: navn_alt
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Alternative stavem&aring;ter av stedsnavnet
+  com: Ren tekst
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: ssr_id
+  type: number
+  read: Alle
+  write: Tilbyder
+  desc: ID til Sentralt Stedsnavnsregister
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: geojson
+  type: object
+  read: Alle
+  write: Tilbyder
+  desc: GeoJSON av typen Point
+  com: Er 2D GeoJSON i dag - kan bli 3D GeoJSON
+  utsted: P&aring;krevd
+  uthytte: P&aring;krevd
+
+- name: omr&aring;der
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Omr&aring;der stedet ligger i
+  com: ObjectID i Omr&aring;der
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: kommune
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Kommunen stedet ligger i
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: fylke
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Fylket stedet ligger i
+  utsted: P&aring;krevd
+  uthytte: P&aring;krevd
+
+- name: beskrivelse
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Beskrivelse av stedet
+  html: [h3, em, strong, p, img, a]
+  utsted: P&aring;krevd
+  uthytte: P&aring;krevd
+
+- name: adkomst
+  type: object
+  read: Alle
+  write: Tilbyder
+  desc: Beskrivelse av adkomst til stedet
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: adkomst.sommer
+  type: string
+  html: [h3, em, strong, p, img, a]
+
+- name: adkomst.vinter
+  type: string
+  html: [h3, em, strong, p, img, a]
+
+- name: tilrettelagt_for
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Hvilke grupper stedet er tilrettelagt for
+  values: [Barnevogn, Rullestol, Hund, Skoleklasser, Handikap]
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: fasiliteter
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Stedets ulike fasiliteter
+  values: [12v, 220v, Badstu, B&aring;t, Dusj, Kano, Kortbetaling, Mobildekning,
+          Peis, Servering, Steikeovn, Str&oslash;movn, Sykkel, Sykkelutleie, Telefon,
+          Teltplass, T&oslash;rkerom, Utleie, Vann, Vedovn, Wc]
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: lenker
+  type: object[]
+  read: Alle
+  write: Tilbyder
+  desc: Relevante lenker for stedet
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: lenker[#].tittel
+  type: string
+
+- name: lenker[#].type
+  type: string
+  values: [Pris, Facebook, Yr, Twitter, Instagram, Hjemmeside, Booking, Kontaktinfo]
+
+- name: lenker[#].url
+  type: string
+
+- name: bygge&aring;r
+  type: number
+  read: Alle
+  write: Tilbyder
+  desc: "&Aring;ret hytten stod ferdig"
+  utsted:
+  uthytte: Anbefalt
+
+- name: bes&oslash;ksstatisikk
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Bes&oslash;ksstatisikk for stedet
+  com: NB! Data kommer i 2014
+  utsted:
+  uthytte: Anbefalt
+
+- name: betjeningsgrad
+  type: string
+  read: Alle
+  write: Tilbyder
   desc: 
-  com: 
-  ut: 
+  values: [Betjent, Servering, Selvbetjent, Ubetjent, Dagshytte,
+          N&oslash;dbu, Utleie, Stengt, Nedlagt]
+  utsted:
+  uthytte: P&aring;krevd
+
+- name: tags
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Liste med tagger for stedet
+  values: [Hytte, Fjelltopp, Gapahuk, Rasteplass, Telplass,
+          Geocaching, Turpostkasse, Turorientering, Utsiktspunkt,
+          Attraksjon, Badeplass, Fiskeplass, Klatrefelt, Akebakke,
+          Skitrekk, Kitested, Sk&oslash;ytevann, Toalett, Bro,
+          Vadested, Parkering, Holdeplass, Togstasjon]
+  utsted: P&aring;krevd
+  uthytte: P&aring;krevd
+
+- name: grupper
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Grupper som forvalter steded
+  com: ObjectID i Grupper
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: privat
+  type: string
+  read: Tilbyder
+  write: Tilbyder
+  desc: Private felt
+  com: Bare synlig for tilbyder
+
+- name: bilder
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Tilknyttede stedsbilder
+  com: ObjectID i Bilder
+  utsted: P&aring;krevd
+  uthytte: P&aring;krevd
+
+- name: url
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Nettadresse til siden som opprinnelig viser stedet
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: kart
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Kartblad fra m711-serien
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: turkart
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Turkart fra ymse kartprodusenter
+  utsted: Anbefalt
+  uthytte: Anbefalt
 
