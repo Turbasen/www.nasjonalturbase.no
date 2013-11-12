@@ -1,0 +1,28 @@
+---
+layout: default
+title: Datastandard 
+---
+
+<h1>Steder (og Hytter)</h1>
+
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th>Feltnavn</th>
+      <th>Datatype</th>
+      <th>Lese</th>
+      <th>Skrive</th>
+      <th>Beskrivelse</th>
+      <th>Kommentar</th>
+      <th>UT</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for member in site.data.steder %}
+    <tr>
+      <td>{{ member.name }}</td>
+      <td>{{ member.github }}</td>
+    </tr>
+  {% endfor %}
+</tbody>
+</table>
