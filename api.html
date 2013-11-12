@@ -3,19 +3,14 @@ layout: default
 title: API
 ---
 
+{% for api in site.data.api %}
+<h2>{{ api.title }}</h2>
+
+<pre><code>{{ api.request }}</code></pre>
+
 <h3 id="response">Response</h3>
 
-<pre class="headers"><code>Status: 200 OK
-X-RateLimit-Limit: 5000
-X-RateLimit-Remaining: 4999</code></pre>
+<pre class="headers"><code class="language-http">{{ api.response }}</code></pre>
+<pre class="highlight"><code class="language-json">{{ api.data }}</code></pre>
 
-<pre class="highlight"><code class="language-javascript">
-var foo = function(bar, baz) {
-  if bar > baz {
-    return bar
-  } else {
-    return baz
-  }
-}
-</code></pre>
-
+{% endfor %}
