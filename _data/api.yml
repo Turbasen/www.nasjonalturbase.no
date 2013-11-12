@@ -1,0 +1,11 @@
+- title: Hent turforslag
+  request: GET /trip
+  response: |
+    Status: 200 OK
+    X-RateLimit-Limit: 5000
+    X-RateLimit-Remaining: 4999
+  data: |
+    {
+      "foo": "bar",
+      "bar": [1,2,3,4]
+    }
