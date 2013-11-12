@@ -1,0 +1,48 @@
+- name: _id 
+  type: string
+  read: Alle
+  write: Ingen
+  desc: Autogenerert unik ID (ObjectID)
+  com: Legges automatisk inn av Nasjonal Turbase
+  ut: 
+
+- name: tilbyder
+  type: string
+  read: Alle
+  write: Ingen
+  desc: 
+  com: 
+  ut: 
+
+- name: 
+  type: string
+  read: Alle
+  write: Ingen
+  desc: 
+  com: 
+  ut: 
+
+- name: 
+  type: string
+  read: Alle
+  write: Ingen
+  desc: 
+  com: 
+  ut: 
+
+- name:  
+  type: string
+  read: Alle
+  write: Ingen
+  desc: 
+  com: 
+  ut: 
+
+- name:  
+  type: string
+  read: Alle
+  write: Ingen
+  desc: 
+  com: 
+  ut: 
+
