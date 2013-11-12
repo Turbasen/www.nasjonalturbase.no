@@ -1,28 +1,48 @@
 ---
 layout: default
-title: Datastandard 
+title: Datastandard
 ---
 
 <h1>Steder (og Hytter)</h1>
 
-<table class="table table-bordered">
-  <thead>
-    <tr>
-      <th>Feltnavn</th>
-      <th>Datatype</th>
-      <th>Lese</th>
-      <th>Skrive</th>
-      <th>Beskrivelse</th>
-      <th>Kommentar</th>
-      <th>UT</th>
-    </tr>
-  </thead>
-  <tbody>
-  {% for member in site.data.steder %}
-    <tr>
-      <td>{{ member.name }}</td>
-      <td>{{ member.github }}</td>
-    </tr>
-  {% endfor %}
-</tbody>
-</table>
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Feltnavn</th>
+        <th>Datatype</th>
+        <th>Lese</th>
+        <th>Skrive</th>
+        <th>Beskrivelse</th>
+        <th>Kommentar</th>
+        <th>ut/sted</th>
+        <th>ut/hytte</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for member in site.data.steder %}
+      <tr>
+        <td>{{ member.name }}</td>
+        <td>{{ member.type }}</td>
+        <td>{{ member.read }}</td>
+        <td>{{ member.write }}</td>
+        <td>{{ member.desc }}</td>
+        <td>
+          {% if member.comment %}{{ member.comment }}{% endif %}
+          {% if member.values %}Anbefalte verdier:<br/><ul>{% for val in member.values %}
+            <li>{{ val }}</li>
+          {% endfor %}</ul>{% endif %}
+
+          {% if member.html %}Anbefalt HTML:<br/><ul>{% for val in member.html %}
+            <li>{{ val }}</li>
+          {% endfor %}</ul>{% endif %}
+
+        </td>
+        <td>{{ member.utsted }}</td>
+        <td>{{ member.uthytte }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
