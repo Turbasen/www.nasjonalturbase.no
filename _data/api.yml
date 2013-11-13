@@ -1,3 +1,19 @@
+- title: Hent alle typer
+  anchor: get_types
+  request: GET /objekttyper
+  response: |
+    Status: 200 OK
+    X-RateLimit-Limit: 5000
+    X-RateLimit-Remaining: 4999
+  data : |
+    [
+      "turer",
+      "steder",
+      "omr&aring;der",
+      "grupper",
+      "aktiviteter",
+      "bilder"
+    ]
 - title: Hent alle objekter
   anchor: get_type
   request: GET /:type
