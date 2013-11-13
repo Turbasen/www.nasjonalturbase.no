@@ -16,9 +16,12 @@ footer ul li {
   margin-right: 20px;
 }
 
-h2.glyphicons {
+h1, h2, h3, h4 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
   font-weight: 300;
+}
+
+h2.glyphicons {
   padding-left: 35px;
 }
 
@@ -28,8 +31,6 @@ h2.glyphicons::before {
 
 /* Jumbotron */
 .jumbotron h1 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
-  font-weight: 300;
   text-transform: uppercase;
 }
 
