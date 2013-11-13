@@ -36,6 +36,7 @@
       "total": 1033
     }
 - title: Hent ett objekt
+  anchor: get_type_id
   request: GET /:type/:_id
   params: !!omap
     - name: api_key
