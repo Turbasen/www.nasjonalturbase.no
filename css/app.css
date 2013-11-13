@@ -97,3 +97,7 @@ pre.headers {
 dd {
   margin-left: 14px
 }
+
+.container.api h2 {
+  margin-top: 40px;
+}
