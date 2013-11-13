@@ -1,4 +1,4 @@
-- title: List objekter av gitt objekttype
+- title: List alle objekter av gitt objekttype
   request: GET /:objekttype
   params: !!omap
     - name: api_key
