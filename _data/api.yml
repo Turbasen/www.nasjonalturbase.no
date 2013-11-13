@@ -1,5 +1,5 @@
-- title: List alle objekter av gitt objekttype
-  request: GET /:objekttype
+- title: Hent alle objekter
+  request: GET /:type
   params: !!omap
     - name: api_key
       requ: P&aring;krevd
