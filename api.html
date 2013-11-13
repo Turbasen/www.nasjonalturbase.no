@@ -4,13 +4,23 @@ title: API
 ---
 
 {% for api in site.data.api %}
-<h2>{{ api.title }}</h2>
+  <h2>{{ api.title }}</h2>
+  
+  <pre class="request"><code>{{ api.request }}</code></pre>
 
-<pre><code>{{ api.request }}</code></pre>
-
-<h3 id="response">Response</h3>
-
-<pre class="headers"><code class="language-http">{{ api.response }}</code></pre>
-<pre class="highlight"><code class="language-json">{{ api.data }}</code></pre>
-
+  {% if api.params %}<h3 class="params">Parametere</h3><dl>{% endif %}
+  {% for param in api.params %}
+    <dt>{{ param.name }}</dt>
+    <dd>
+      <em>{{ param.requ }}</em>
+      <strong>{{ param.type }}</strong>
+      {% if param.desc %} - {{ param.desc }}{% endif %}
+    </dd>
+  {% endfor %}
+  {% if api.params %}</dl>{% endif %}
+  
+  <h3 class="response">Response</h3>
+  
+  <pre class="headers"><code class="language-http">{{ api.response }}</code></pre>
+  <pre class="highlight"><code class="language-json">{{ api.data }}</code></pre>
 {% endfor %}
