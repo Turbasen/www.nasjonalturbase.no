@@ -3,8 +3,14 @@ layout: default
 title: API
 ---
 
+<h1>Oversikt</h1>
+
+<ol>{% for api in site.data.api %}
+  <li><a href="#{{ api.anchor }}">{{ api.title }}</a></li>
+{% endfor %}</ol>
+
 {% for api in site.data.api %}
-  <h2>{{ api.title }}</h2>
+  <h2 id="{{ api.anchor }}">{{ api.title }}</h2>
   
   <pre class="request"><code>{{ api.request }}</code></pre>
 
