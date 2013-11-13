@@ -1,4 +1,5 @@
 - title: Hent alle objekter
+  anchor: get_type
   request: GET /:type
   params: !!omap
     - name: api_key
