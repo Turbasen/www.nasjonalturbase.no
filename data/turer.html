@@ -1,0 +1,54 @@
+---
+layout: default
+title: Turer
+end: true
+---
+
+<h1>Turer</h1>
+
+<p></p>
+
+<p><strong>API url:</strong> api.nasjonalturbase.no/turer</p>
+
+<p><strong>Endringslogg:</strong> <a
+  href="https://github.com/Turistforeningen/www.nasjonalturbase.no/commits/gh-pages/_data/turer.yml">se github.com</a></p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Feltnavn</th>
+        <th>Datatype</th>
+        <th>Lese</th>
+        <th>Skrive</th>
+        <th>Beskrivelse</th>
+        <th>Kommentar</th>
+        <th>ut/tur</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for tur in site.data.turer %}
+      <tr>
+        <td>{{ tur.name }}</td>
+        <td>{{ tur.type }}</td>
+        <td>{{ tur.read }}</td>
+        <td>{{ tur.write }}</td>
+        <td>{{ tur.desc }}</td>
+        <td>
+          {% if tur.comment %}{{ tur.comment }}{% endif %}
+          {% if tur.values %}Anbefalte verdier:<br/><ul>{% for val in tur.values %}
+            <li>{{ val }}</li>
+          {% endfor %}</ul>{% endif %}
+
+          {% if tur.html %}Anbefalt HTML:<br/><ul>{% for val in tur.html %}
+            <li>{{ val }}</li>
+          {% endfor %}</ul>{% endif %}
+
+        </td>
+        <td>{{ tur.ut }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
