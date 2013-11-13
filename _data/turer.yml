@@ -1,0 +1,274 @@
+- name: _id 
+  type: string
+  read: Alle
+  write: Ingen
+  desc: Autogenerert unik ID (ObjectID)
+  com: Legges automatisk inn av Nasjonal Turbase
+  ut:
+
+- name: tilbyder
+  type: string
+  read: Alle
+  write: Ingen
+  desc: Innholdsleverand&oslash;r som har lagt inn turen 
+  com: Legges automatisk inn av Nasjonal Turbase
+  ut:
+
+- name: opprettet
+  type: string
+  read: Alle
+  write: Ingen
+  desc: Tid og dato for opprettet (ISO 8601)
+  com: Legges automatisk inn av Nasjonal Turbase
+  ut:
+
+- name: endret
+  type: string
+  read: Alle
+  write: Ingen
+  desc: Tid og dato for sist endret (ISO 8601)
+  com: Legges automatisk inn av Nasjonal Turbase
+  ut:
+
+- name: lisens
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Lisens for bruk og visning av turen
+  values: ["CC BY 3.0 NO", "CC BY-NC 3.0 NO", "CC BY-ND 3.0 NO", "CC BY-NC-ND 3.0 NO"]
+  ut: P&aring;krevd
+
+- name: navngivning
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Tekst som skal vises om valgt lisens stiller krav til navngiving
+  ut: Anbefalt
+
+- name: status
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Publiseringsstatus
+  values: [Kladd, Privat, Offentlig, Slettet]
+  ut: P&aring;krevd
+
+- name: navn
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Navn p&aring; turen
+  ut: P&aring;krevd
+
+- name: geojson
+  type: object
+  read: Alle
+  write: Tilbyder
+  desc: GeoJSON av typen LineString
+  com: Er 2D GeoJSON i dag - kan bli 3D GeoJSON
+  ut: P&aring;krevd
+
+- name: distanse
+  type: number
+  read: Alle
+  write: Tilbyder
+  desc: Inntegningens totale lengde
+  ut: Anbefalt
+
+- name: retning
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Hvilken retning turen g&aring;r i forhold til inntegningen
+  values: [AB, BA, ABA, BAB]
+  ut: Anbefalt
+
+- name: omr&aring;der
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Omr&aring;der turen ligger i
+  com: ObjectID i Omr&aring;der
+  ut: Anbefalt
+
+- name: kommune
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Kommunen turen ligger i
+  ut: Anbefalt
+
+- name: fylke
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Fylket turen ligger i
+  ut: P&aring;krevd
+
+- name: beskrivelse
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Beskrivelse av turen
+  html: [h3, em, strong, p, img, a]
+  ut: P&aring;krevd
+
+- name: adkomst
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Beskrivelse av adkomst til turens starttur
+  html: [h3, em, strong, p, img, a]
+  ut: Anbefalt
+
+- name: lenker
+  type: object[]
+  read: Alle
+  write: Tilbyder
+  desc: Relevante lenker for turen
+  ut: Anbefalt
+
+- name: lenker[#].tittel
+  type: string
+
+- name: lenker[#].url
+  type: string
+
+- name: gradering
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Gradering som definert i Merkeh&aring;ndboka
+  values: [Enkel, Middels, Krevende, Ekspert]
+  ut: P&aring;krevd
+
+- name: passer_for
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Hvilke m&aring;lgrupper passer turen for
+  values: [Barn, Voksen, Senior]
+  ut: Anbefalt
+
+- name: tilrettelagt_for
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Hvilke grupper turen er tilrettelagt for
+  values: [Barnevogn, Rullestol, Handikap]
+  ut: Anbefalt
+
+- name: sesong
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Liste med m&aring;nedene turen kan tas
+  values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  ut: P&aring;krevd
+
+- name: tidsbruk
+  type: object
+  read: Alle
+  write: Tilbyder
+  desc: Antall dager, timer, og minutter
+  ut: Anbefalt
+
+- name: tidsbruk.normal
+  type: object
+  desc: Godt trent voksen person uten pauser
+
+- name: tidsbruk.normal.dager
+  type: number
+
+- name: tidsbruk.normal.timer
+  type: number
+
+- name: tidsbruk.normal.minutter
+  type: number
+
+- name: tidsbruk.min
+  type: object
+
+- name: tidsbruk.min.dager
+  type: number
+
+- name: tidsbruk.min.timer
+  type: number
+
+- name: tidsbruk.min.minutter
+  type: number
+
+- name: tidsbruk.max
+  type: object
+
+- name: tidsbruk.max.dager
+  type: number
+
+- name: tidsbruk.max.timer
+  type: number
+
+- name: tidsbruk.max.minutter
+  type: number
+
+- name: tags
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Liste med tagger for turen
+  values: [
+    Fottur,
+    Skitur,
+    Sykkeltur,
+    Padletur,
+    Klatretur,
+  ]
+  uttur: P&aring;krevd
+  ut: P&aring;krevd
+
+- name: grupper
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Grupper som forvalter turen
+  com: ObjectID i Grupper
+  ut: Anbefalt
+
+- name: privat
+  type: string
+  read: Tilbyder
+  write: Tilbyder
+  desc: Private felt
+  com: Bare synlig for tilbyder
+
+- name: bilder
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Tilknyttede tursbilder
+  com: ObjectID i Bilder
+  ut: P&aring;krevd
+
+- name: url
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Nettadresse til siden som opprinnelig viser turen
+  uttur: Anbefalt
+  ut: Anbefalt
+
+- name: kart
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Kartblad fra m711-serien
+  uttur: Anbefalt
+  ut: Anbefalt
+
+- name: turkart
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Turkart fra ymse kartprodusenter
+  uttur: Anbefalt
+  ut: Anbefalt
+
