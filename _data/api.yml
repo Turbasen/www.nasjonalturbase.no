@@ -4,7 +4,6 @@
     - name: api_key
       requ: P&aring;krevd
       type: string
-      desc: din private API n&oslash;kkel
     - name: limit
       requ: Valgfri
       type: number
@@ -31,10 +30,42 @@
           "endret": "2013-07-07T15:11:46.000Z",
           "navn": "&Oslash;ykjafjellet - topptur med fin utsikt"
         },
-        {
-          ...
-        }
+        ...
       },
       "count": 20,
       "total": 1033
     }
+- title: Hent ett objekt
+  request: GET /:type/:_id
+  params: !!omap
+    - name: api_key
+      requ: P&aring;krevd
+      type: string
+  response: |
+    Status: 200 OK
+    ETag: "644b5b0155e6404a9cc4bd9d8b1ae730"
+    Last-Modified: Thu, 07 Jul 2013 15:11:46 GMT
+    X-RateLimit-Limit: 5000
+    X-RateLimit-Remaining: 4999
+    X-RateLimit-Reset: 1372700873
+  data: |
+    {
+      "_id": "524081f9b8cb77df15001660",
+      "tilbyder": "DNT",
+      "opprettet": "2013-07-07T12:27:47.000Z",
+      "endret": "2013-07-07T15:11:46.000Z",
+      "lisens": "CC BY-NC-ND 3.0 NO",
+      "navngivning": "Turen er levert via <a href=\"http://ut.no\">UT.no</a> og lisensiert under <a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0/no\">CC BY-NC-ND 3.0</a>",
+      "status": "Offentlig",
+      "navn":"&Oslash;ykjafjellet - topptur med fin utsikt",
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [5.85660630854479,58.8569687273594],
+          [5.85720712338704,58.8570575064399],
+          [5.85772210753763,58.8571462852927]
+        ]
+      },
+      ...
+    }
+    
