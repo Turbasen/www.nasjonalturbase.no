@@ -1,11 +1,40 @@
-- title: Hent turforslag
-  request: GET /trip
+- title: List objekter av gitt objekttype
+  request: GET /:objekttype
+  params: !!omap
+    - name: api_key
+      requ: P&aring;krevd
+      type: string
+      desc: din private API n&oslash;kkel
+    - name: limit
+      requ: Valgfri
+      type: number
+    - name: skip
+      requ: Valgfri
+      type: number
+    - name: after
+      requ: Valgfri
+      type: ISODate
+      desc: objekter endret etter data
+    - name: tag
+      requ: Valgfri
+      type: string
+      desc: objekter med gitt prim&aelig;rkategori
   response: |
     Status: 200 OK
     X-RateLimit-Limit: 5000
     X-RateLimit-Remaining: 4999
   data: |
     {
-      "foo": "bar",
-      "bar": [1,2,3,4]
+      "documents": [
+        {
+          "_id": "524081f9b8cb77df15001660",
+          "endret": "2013-07-07T15:11:46.000Z",
+          "navn": "&Oslash;ykjafjellet - topptur med fin utsikt"
+        },
+        {
+          ...
+        }
+      },
+      "count": 20,
+      "total": 1033
     }
