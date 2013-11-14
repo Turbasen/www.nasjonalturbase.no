@@ -18,7 +18,7 @@
   anchor: get_type
   resource: GET /:type
   params: !!omap
-    - name: api_key
+    - name: :type
       requ: P&aring;krevd
       type: string
     - name: limit
@@ -56,7 +56,10 @@
   anchor: get_type_id
   resource: GET /:type/:_id
   params: !!omap
-    - name: api_key
+    - name: :type
+      requ: P&aring;krevd
+      type: string
+    - name: :_id
       requ: P&aring;krevd
       type: string
   response: |
@@ -89,6 +92,10 @@
 - title: Opprett nytt objekt
   anchor: api-post
   resource: POST /:type
+  params: !!omap
+    - name: :type
+      requ: P&aring;krevd
+      type: string
   request: !!map
     headers: |
       POST /turer HTTP/1.1
