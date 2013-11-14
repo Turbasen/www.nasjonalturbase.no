@@ -100,6 +100,11 @@ pre.headers {
   padding-top: 50px;
 }
 
+.container.api dd {
+  margin-left: 14px
+}
+
+
 .container.api .panel {
   margin-top: 20px;
 }
