@@ -101,3 +101,9 @@ dd {
 .container.api h2 {
   margin-top: 40px;
 }
+
+.api .panel {
+  margin-top: 20px;
+  width: 270px;
+}
+
