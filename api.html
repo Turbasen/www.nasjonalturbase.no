@@ -17,13 +17,6 @@ forespørsler ikke nøl med å ta kontakt.</p>
   
   <pre class="resource"><code class="http">{{ api.resource }}</code></pre>
 
-  {% if api.request %}
-    <h3 class="example">Foresp&oslash;rsel</h3>
-
-    <pre class="headers"><code class="http">{{ api.request.headers }}</code></pre>
-    <pre class="highlight"><code class="json">{{ api.request.payload }}</code></pre>
-  {% endif %}
-
   {% if api.params %}<h3 class="params">Parametere</h3><dl>{% endif %}
   {% for param in api.params %}
     <dt>{{ param.name }}</dt>
@@ -35,6 +28,13 @@ forespørsler ikke nøl med å ta kontakt.</p>
   {% endfor %}
   {% if api.params %}</dl>{% endif %}
   
+  {% if api.request %}
+    <h3 class="example">Foresp&oslash;rsel</h3>
+
+    <pre class="headers"><code class="http">{{ api.request.headers }}</code></pre>
+    <pre class="highlight"><code class="json">{{ api.request.payload }}</code></pre>
+  {% endif %}
+
   <h3 class="response">Respons</h3>
   
   <pre class="headers"><code class="http">{{ api.response }}</code></pre>
