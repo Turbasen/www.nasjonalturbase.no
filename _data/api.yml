@@ -86,7 +86,7 @@
       ...
     }
 
-- title: Post nytt objekt
+- title: Opprett nytt objekt
   anchor: api-post
   resource: POST /:type
   request: !!map
