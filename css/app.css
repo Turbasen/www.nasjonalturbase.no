@@ -76,6 +76,7 @@ h2.glyphicons::before {
   font-size: 200px;
 }
 
+/* Syntax Highlighting */
 pre code {
   background: transparent !important;
 }
@@ -94,16 +95,31 @@ pre.headers {
   background-color: #f1f1f1;
 }
 
-dd {
-  margin-left: 14px
-}
-
+/* API documentation */
 .container.api h2 {
   padding-top: 50px;
 }
 
-.api .panel {
+.container.api .panel {
   margin-top: 20px;
-  width: 270px;
+}
+
+@media (max-width: 992px) {
+  .container.api .panel.affix {
+    position: static;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container.api .panel.affix {
+    width: 220px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container.api .panel.affix {
+    width: 270px;
+  }
 }
 

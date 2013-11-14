@@ -5,9 +5,9 @@
     <div class="col-md-3">
       <div class="panel panel-default" data-spy="affix" data-offset-bottom="579">
         <div class="panel-heading">API oversikt</div>
-        <ul class="list-group">{%for api in site.data.api %}
-          <li class="list-group-item"><a href="#{{ api.anchor }}">{{ api.title }}</a></li>
-        {% endfor %}</ul>
+        <div class="list-group">{%for api in site.data.api %}
+          <a class="list-group-item" href="#{{ api.anchor }}">{{ api.title }}</a></li>
+        {% endfor %}</div>
       </div> 
     </div>
     <div class="col-md-9">{{ content }}</div>
