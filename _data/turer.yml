@@ -91,15 +91,15 @@
   com: ObjectID i Omr&aring;der
   ut: Anbefalt
 
-- name: kommune
-  type: string
+- name: kommuner
+  type: string[]
   read: Alle
   write: Tilbyder
   desc: Kommunen turen ligger i
   ut: Anbefalt
 
-- name: fylke
-  type: string
+- name: fylker
+  type: string[]
   read: Alle
   write: Tilbyder
   desc: Fylket turen ligger i
@@ -222,7 +222,6 @@
     Padletur,
     Klatretur,
   ]
-  uttur: P&aring;krevd
   ut: P&aring;krevd
 
 - name: grupper
@@ -253,7 +252,6 @@
   read: Alle
   write: Tilbyder
   desc: Nettadresse til siden som opprinnelig viser turen
-  uttur: Anbefalt
   ut: Anbefalt
 
 - name: kart
@@ -261,7 +259,6 @@
   read: Alle
   write: Tilbyder
   desc: Kartblad fra m711-serien
-  uttur: Anbefalt
   ut: Anbefalt
 
 - name: turkart
@@ -269,6 +266,5 @@
   read: Alle
   write: Tilbyder
   desc: Turkart fra ymse kartprodusenter
-  uttur: Anbefalt
   ut: Anbefalt
 
