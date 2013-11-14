@@ -1,5 +1,5 @@
 - title: Hent alle typer
-  anchor: get_types
+  anchor: get-types
   resource: GET /objekttyper
   response: |
     Status: 200 OK
@@ -15,7 +15,7 @@
       "bilder"
     ]
 - title: Hent alle objekter
-  anchor: get_type
+  anchor: get-collection
   resource: GET /:type
   params: !!omap
     - name: :type
@@ -53,7 +53,7 @@
       "total": 1033
     }
 - title: Hent ett objekt
-  anchor: get_type_id
+  anchor: get-document
   resource: GET /:type/:_id
   params: !!omap
     - name: :type
@@ -90,7 +90,7 @@
     }
 
 - title: Opprett nytt objekt
-  anchor: api-post
+  anchor: post-collection
   resource: POST /:type
   params: !!omap
     - name: :type
