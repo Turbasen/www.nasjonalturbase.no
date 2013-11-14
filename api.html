@@ -4,15 +4,13 @@ title: API
 class: api
 ---
 
-<h1>Oversikt</h1>
+<div class="page-header">
+  <h1>API</h1>
+</div>
 
 <p>Denne siden beskriver resursene som til sammen bygger opp det offisielle APIet
 for Nasjonal Turbase v1-beta. Hvis du her noen problemer eller andre
 forespørsler ikke nøl med å ta kontakt.</p>
-
-<ol>{% for api in site.data.api %}
-  <li><a href="#{{ api.anchor }}">{{ api.title }}</a></li>
-{% endfor %}</ol>
 
 {% for api in site.data.api %}
   <h2 id="{{ api.anchor }}">{{ api.title }}</h2>
