@@ -1,6 +1,6 @@
 - title: Hent alle typer
   anchor: get_types
-  request: GET /objekttyper
+  resource: GET /objekttyper
   response: |
     Status: 200 OK
     X-RateLimit-Limit: 5000
@@ -16,7 +16,7 @@
     ]
 - title: Hent alle objekter
   anchor: get_type
-  request: GET /:type
+  resource: GET /:type
   params: !!omap
     - name: api_key
       requ: P&aring;krevd
@@ -54,7 +54,7 @@
     }
 - title: Hent ett objekt
   anchor: get_type_id
-  request: GET /:type/:_id
+  resource: GET /:type/:_id
   params: !!omap
     - name: api_key
       requ: P&aring;krevd
@@ -65,7 +65,6 @@
     Last-Modified: Thu, 07 Jul 2013 15:11:46 GMT
     X-RateLimit-Limit: 5000
     X-RateLimit-Remaining: 4999
-    X-RateLimit-Reset: 1372700873
   data: |
     {
       "_id": "524081f9b8cb77df15001660",
@@ -86,4 +85,51 @@
       },
       ...
     }
-    
+
+- title: Post nytt objekt
+  anchor: api-post
+  resource: POST /:type
+  request: !!map
+    headers: |
+      POST /turer HTTP/1.1
+      Content-Type: application/json; charset=utf-8
+      Content-Length: 2469
+    payload: |
+      {
+        "lisens": "CC BY-NC-ND 3.0 NO",
+        "navn": "Fra H&oslash;gabu til Vaksdal",
+        "status": "Offentig",
+        "geojson": {
+          "type": "LineString",
+          "coordinates": [
+            [5.85660630854479,58.8569687273594],
+            [5.85720712338704,58.8570575064399],
+            [5.85772210753763,58.8571462852927]
+          ]
+        },
+        ...
+      }
+  response: |
+    Status: 201 Created
+    Location: http://api.nasjonalturbase.no/turer/524081f9b8cb77df15001661
+    X-RateLimit-Limit: 5000
+    X-RateLimit-Remaining: 4999
+  data: |
+    {
+      "_id": "524081f9b8cb77df15001661",
+      "tilbyder": "TestAppNatur",
+      "opprettet": "2013-11-14T02:15:15Z",
+      "endret": "2013-11-14T02:15:15Z",
+      "lisens": "CC BY-NC-ND 3.0 NO",
+      "navn": "Fra H&oslash;gabu til Vaksdal",
+      "status": "Offentig",
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [5.85660630854479,58.8569687273594],
+          [5.85720712338704,58.8570575064399],
+          [5.85772210753763,58.8571462852927]
+        ]
+      },
+      ...
+    }

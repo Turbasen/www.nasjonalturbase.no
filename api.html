@@ -15,7 +15,14 @@ forespørsler ikke nøl med å ta kontakt.</p>
 {% for api in site.data.api %}
   <h2 id="{{ api.anchor }}">{{ api.title }}</h2>
   
-  <pre class="request"><code>{{ api.request }}</code></pre>
+  <pre class="resource"><code class="http">{{ api.resource }}</code></pre>
+
+  {% if api.request %}
+    <h3 class="example">Foresp&oslash;rsel</h3>
+
+    <pre class="headers"><code class="http">{{ api.request.headers }}</code></pre>
+    <pre class="highlight"><code class="json">{{ api.request.payload }}</code></pre>
+  {% endif %}
 
   {% if api.params %}<h3 class="params">Parametere</h3><dl>{% endif %}
   {% for param in api.params %}
@@ -30,6 +37,6 @@ forespørsler ikke nøl med å ta kontakt.</p>
   
   <h3 class="response">Respons</h3>
   
-  <pre class="headers"><code class="language-http">{{ api.response }}</code></pre>
-  <pre class="highlight"><code class="language-json">{{ api.data }}</code></pre>
+  <pre class="headers"><code class="http">{{ api.response }}</code></pre>
+  <pre class="highlight"><code class="json">{{ api.data }}</code></pre>
 {% endfor %}
