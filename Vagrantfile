@@ -1,6 +1,19 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
+# Boostrap Script
+$script = <<SCRIPT
+
+apt-get update
+apt-get install -y make ruby1.9.1-dev
+echo "installing ruby gems"
+gem install jekyll
+gem install github-pages
+
+echo "cd /vagrant" >> /home/vagrant/.bashrc
+
+SCRIPT
+
 Vagrant.configure("2") do |config|
   # All Vagrant configuration is done here. The most common configuration
   # options are documented and commented below. For a complete reference,
@@ -13,8 +26,9 @@ Vagrant.configure("2") do |config|
   # doesn't already exist on the user's system.
   config.vm.box_url = "http://files.vagrantup.com/precise32.box"
 
-  # Bootstrap Shell
-  config.vm.provision :shell, :path => "vagrant-boot.sh"
+  # The shell provisioner allows you to upload and execute a script as the root
+  # user within the guest machine.
+  config.vm.provision :shell, :inline => $script
 
   # Create a forwarded port mapping which allows access to a specific port
   # within the machine from a port on the host machine. In the example below,
