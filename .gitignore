@@ -5,3 +5,4 @@ output/
 tmp/
 _site/
 npm-debug.log
+.DS_Store
