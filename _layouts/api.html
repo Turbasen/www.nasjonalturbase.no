@@ -10,7 +10,10 @@
         {% endfor %}</div>
       </div> 
     </div>
-    <div class="col-md-9">{{ content }}</div>
+    <div class="col-md-9">
+      {% include title.html %}
+      {{ content }}
+    </div>
   </div>
 </div>
 
