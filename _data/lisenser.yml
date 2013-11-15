@@ -1,0 +1,42 @@
+- name: CC BY 3.0 NO
+  url: "http://creativecommons.org/licenses/by/3.0/no/"
+  by: true
+  nc: false
+  nd: false
+  sa: false
+
+- name: CC BY-SA 3.0 NO
+  url: http://creativecommons.org/licenses/by-sa/3.0/no/
+  by: true
+  nc: false
+  nd: false
+  sa: true
+
+- name: CC BY-ND 3.0 NO
+  url: http://creativecommons.org/licenses/by-nd/3.0/no/
+  by: true
+  nc: false
+  nd: true
+  sa: n/a
+
+- name: CC BY-NC 3.0 NO
+  url: http://creativecommons.org/licenses/by-nc/3.0/no/
+  by: true
+  nc: true
+  nd: false
+  sa: false
+
+- name: CC BY-NC-SA 3.0 NO
+  url: http://creativecommons.org/licenses/by-nc-sa/3.0/no/
+  by: true
+  nc: true
+  nd: false
+  sa: true
+
+- name: CC BY-NC-ND 3.0 NO
+  url: http://creativecommons.org/licenses/by-nc-nd/3.0/no/
+  by: true
+  nc: true
+  nd: true
+  sa: n/a
+

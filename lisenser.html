@@ -1,0 +1,172 @@
+---
+layout: default
+title: Lisenser
+byline: Din data forblir din
+---
+
+<p>Nasjonal Turbase tilegner seg ingen imaterielle rettigheter over den data som
+du legger inn i Nasjonal Turbase utover den lisensen du velger. Vi lover at dine
+data skal forbli dine!</p>
+
+<p>Av denne grunn må alle data eksplisit lisensieres under én av de seks
+Creative Commons lisensene under. Dette vil med andre ord si at alle data fra
+Nasjonal Turbase kan brukes gratis men etter de krav lisensen setter for
+endringer, bruk og viderebruk så lenge vilkårene i lisensen følges.</p>
+
+<h2>Valgbare lisenser</h2>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Lisens</td>
+      <th>Navngivelse (BY)</th>
+      <th>Ikkekommersiell (NC)</th>
+      <th>Ingen bearbeidelse (ND)</th>
+      <th>Del på samme vilkår (SA)</th>
+    </tr>
+  </thead>
+  <tbody>{% for license in site.data.lisenser %}
+    <tr>
+      <td><a href="{{ license.url }}">{{ license.name }}</a></td>
+
+      {% if license.by == true %}
+        <td class="success">Ja</td>
+      {% else %}
+        <td class="danger">Nei</td>
+      {% endif %}
+
+      {% if license.nc == true %}
+        <td class="success">Ja</td>
+      {% else %}
+        <td class="danger">Nei</td>
+      {% endif %}
+
+      {% if license.nd == true %}
+        <td class="success">Ja</td>
+      {% else %}
+        <td class="danger">Nei</td>
+      {% endif %}
+
+      {% if license.sa == true %}
+        <td class="success">Ja</td>
+      {% else %}
+        {% if license.sa == false %}
+          <td class="danger">Nei</td>
+        {% else %}
+          <td class="warning">n/a</td>
+        {% endif %}
+      {% endif %}
+    </tr>
+  {% endfor %}</tbody>
+</table>
+
+<h2>Creative Commons</h2>
+
+<p>Creative Commons tilbyr opphavspersonen å velge mellom ulike lisenselementer.
+Hvert lisenselement angir et vilkår, som kan være påbudt, forbudt, eller
+tillatt. Hvert av de 4 lisenselement har en standard­forkortelse på to bokstaver
+(BY, NC, ND, SA).</p>
+
+<p>Et <code>verk</code> er det objektet som entes legges inn i eller hentes ut
+av Nasjonal Turbase. Et verk har ett felt for valgt lisens i
+<code>.lisens</code>, hvordan verket skal navgives i <code>.navngivning</code>,
+og hvor det opprinnelige verket befinner seg i <code>.url</code>.</p>
+
+<h3>Navngivelse (BY)</h3>
+
+<p>Lisenselementet «Navngivelse» kan ikke velges bort, og forekommer alltid.
+Dette innebærer at for all bruk er det påbudt at opphavspersonen navngis slik
+som god skikk tilsier. Dette er forøvrig i samsvar med norsk lov.</p>
+
+<h3>Ikkekommersiell (NC)</h3>
+
+<p>Lisenselementet «Ikkekommersiell» tillater kun spredning og bruk under den
+forutsetning at verket ikke benyttes på en kommersiell måte. Er dette
+lisenselementet valgt er bruk til reklameformål, ervervsmessig bruk, og annen
+bruk som har til formål å gi kommersiell nytte, eller som gir økonomisk gevinst,
+forbudt. Ønsker du å sikre deg mot at ditt verk brukes til reklame eller at
+kommersielle aktører benytter verket uten å gjøre en eksplisitt avtale med deg
+først, må du velge en av de tre lisensene som inneholder dette
+lisenselementet.</p>
+
+<h3>Ingen bearbeidelse (ND)</h3>
+
+<p>Lisenselementet «Ingen bearbeidelse» tillater kun spredning og bruk av verket
+i uendret tilstand. Bearbeidelse eller endring av verket er forbudt. Det samme
+gjelder framstilling av såkalte avledede verk. Velger du å benytte en lisens med
+dette lisenselementet er det ikke mulig å fremstille eller fremføre
+bearbeidelser som legger andre versjoner eller jurisdiksjoner av lisensen enn
+den du har valgt, til grunn. Dette elementet avskjærer imidlertid andre fra å
+lage remixer og mashups der ditt verk inngår.</p>
+
+<h3>Del på samme vilkår (SA)</h3>
+
+<p>Lisenselementet «Del på samme vilkår» innebærer et påbud om at bearbeidelser
+av verket kun kan spres på samme vilkår som det opprinnelige verket. Dette
+prinsippet (at avledede verk skal være underlagt samme vilkår som det eller de
+verk de er avledet fra) kalles ofte for «Copyleft».</p>
+
+<small>Les mer om <a href="http://creativecommons.no/node/53">de ulike
+    lisenstypene</a>.</small>
+
+<h2>Rettigheter og plikter</h2>
+
+<div class="alert alert-danger"><strong>Viktig!</strong> Teksten nedenfor er en
+  forenklet oppsummering av fellestrekkene for alle Creative Commons lisense og
+  er ikke nødvendigvis juridisk korrekt. Vi anbefaler deg derfor å lese
+  lisensene på Creative Commons sine <a
+    href="http://creativecommons.no/node/54">egne sider</a>.</div>
+
+<h3>Hvis du legger inn data:</h3>
+<ol>
+
+  <li>beholder du din opphavsrett og kan selv benytte verket uavhengig av lisensen
+  du har valgt;</li>
+
+  <li>kan du fremdeles utnytte og tilby verket på andre vilkår enn de som er nevnt
+  i lisensen;</li>
+
+  <li>kan du gi tydelig beskjed om at andre menneskers rett til f.eks. å sitere
+  og å fremstille eller kopiere verket for privat bruk, ikke påvirkes av
+  lisensen.</li>
+
+</ol>
+
+<h3>Hvis du henter ut data:</h3>
+<ol>
+
+  <li>må du bevare opphavspersonens navngivelse <code>.navngivning</code> på
+  alle eksemplarer av verket, inklusive endringer, med mindre opphavspersonen
+  eksplisitt ber om at navnet strykes;</li>
+
+  <li>må du skaffe deg særskilt tillatelse før du kan benytte verket på andre
+  måter enn det lisensen allerede tillater, som f.eks. å gjøre endringer i
+  verket eller benytte verket til kommersielle formål;</li>
+
+  <li>må du gjengi eller lenke til verkets lisens <code>.lisens</code> fra hvert
+  eksemplar av verket du fremstiller;</li>
+
+  <li>må du lenke til den opprinnelige tilgjengeliggjøringen av verket
+  <code>.url</code> fra hvert eksemplar av verket du fremstiller.</li>
+  
+</ol>
+
+<h4>Forustatt at vilkårene følges, kan du:</h4>
+<ol>
+  <li>kopiere verket;</li>
+  <li>distribuere verket;</li>
+  <li>vise eller fremføre verket offentlig;</li>
+  <li>fremføre verket digitalt (f.eks. webcasting);</li>
+  <li>konvertere verket til et annet format.</li>
+</ol>
+
+<h3>Alle lisensene:</h3>
+<ol>
+  <li>gjelder i hele verden</li>
+  <li>gjelder under hele verkets vernetid;</li>
+  <li>kan ikke kalles tilbake.</li>
+</ol>
+
+<small>Les mer om <a href="http://creativecommons.no/node/54">grunnregler for
+    alle lisensene</a>.</small>
+
