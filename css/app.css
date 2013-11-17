@@ -128,3 +128,12 @@ pre.headers {
   }
 }
 
+/* lisenser.html */
+.nav-tabs a.glyphicons::before {
+  margin: 10px 5px 0 5px;
+  font: 18px/1em 'Glyphicons Regular';
+}
+
+.nav-tabs a.glyphicons {
+  padding-left: 27px;
+}
