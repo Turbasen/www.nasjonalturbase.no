@@ -15,50 +15,52 @@ endringer, bruk og viderebruk så lenge vilkårene i lisensen følges.</p>
 
 <h2>Valgbare lisenser</h2>
 
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <th>Lisens</td>
-      <th>Navngivelse (BY)</th>
-      <th>Ikkekommersiell (NC)</th>
-      <th>Ingen bearbeidelse (ND)</th>
-      <th>Del på samme vilkår (SA)</th>
-    </tr>
-  </thead>
-  <tbody>{% for license in site.data.lisenser %}
-    <tr>
-      <td><a href="{{ license.url }}">{{ license.name }}</a></td>
-
-      {% if license.by == true %}
-        <td class="success">Ja</td>
-      {% else %}
-        <td class="danger">Nei</td>
-      {% endif %}
-
-      {% if license.nc == true %}
-        <td class="success">Ja</td>
-      {% else %}
-        <td class="danger">Nei</td>
-      {% endif %}
-
-      {% if license.nd == true %}
-        <td class="success">Ja</td>
-      {% else %}
-        <td class="danger">Nei</td>
-      {% endif %}
-
-      {% if license.sa == true %}
-        <td class="success">Ja</td>
-      {% else %}
-        {% if license.sa == false %}
-          <td class="danger">Nei</td>
+<div class="table-responsive">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th>Lisens</td>
+        <th>Navngivelse (BY)</th>
+        <th>Ikkekommersiell (NC)</th>
+        <th>Ingen bearbeidelse (ND)</th>
+        <th>Del på samme vilkår (SA)</th>
+      </tr>
+    </thead>
+    <tbody>{% for license in site.data.lisenser %}
+      <tr>
+        <td><a href="{{ license.url }}">{{ license.name }}</a></td>
+  
+        {% if license.by == true %}
+          <td class="success">Ja</td>
         {% else %}
-          <td class="warning">n/a</td>
+          <td class="danger">Nei</td>
         {% endif %}
-      {% endif %}
-    </tr>
-  {% endfor %}</tbody>
-</table>
+  
+        {% if license.nc == true %}
+          <td class="success">Ja</td>
+        {% else %}
+          <td class="danger">Nei</td>
+        {% endif %}
+  
+        {% if license.nd == true %}
+          <td class="success">Ja</td>
+        {% else %}
+          <td class="danger">Nei</td>
+        {% endif %}
+  
+        {% if license.sa == true %}
+          <td class="success">Ja</td>
+        {% else %}
+          {% if license.sa == false %}
+            <td class="danger">Nei</td>
+          {% else %}
+            <td class="warning">n/a</td>
+          {% endif %}
+        {% endif %}
+      </tr>
+    {% endfor %}</tbody>
+  </table>
+</div>
 
 <h2>Creative Commons</h2>
 
