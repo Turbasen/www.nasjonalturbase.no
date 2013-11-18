@@ -9,7 +9,7 @@
     [
       "turer",
       "steder",
-      "omr&aring;der",
+      "områder",
       "grupper",
       "aktiviteter",
       "bilder"
@@ -19,7 +19,7 @@
   resource: GET /:type
   params: !!omap
     - name: :type
-      requ: P&aring;krevd
+      requ: Påkrevd
       type: string
     - name: limit
       requ: Valgfri
@@ -34,7 +34,7 @@
     - name: tag
       requ: Valgfri
       type: string
-      desc: objekter med gitt prim&aelig;rkategori
+      desc: objekter med gitt primærkategori
   response: |
     Status: 200 OK
     X-RateLimit-Limit: 5000
@@ -45,7 +45,7 @@
         {
           "_id": "524081f9b8cb77df15001660",
           "endret": "2013-07-07T15:11:46.000Z",
-          "navn": "&Oslash;ykjafjellet - topptur med fin utsikt"
+          "navn": "Øykjafjellet - topptur med fin utsikt"
         },
         ...
       },
@@ -57,10 +57,10 @@
   resource: GET /:type/:_id
   params: !!omap
     - name: :type
-      requ: P&aring;krevd
+      requ: Påkrevd
       type: string
     - name: :_id
-      requ: P&aring;krevd
+      requ: Påkrevd
       type: string
   response: |
     Status: 200 OK
@@ -77,7 +77,7 @@
       "lisens": "CC BY-NC-ND 3.0 NO",
       "navngivning": "Turen er levert via <a href=\"http://ut.no\">UT.no</a> og lisensiert under <a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0/no\">CC BY-NC-ND 3.0</a>",
       "status": "Offentlig",
-      "navn":"&Oslash;ykjafjellet - topptur med fin utsikt",
+      "navn":"Øykjafjellet - topptur med fin utsikt",
       "geojson": {
         "type": "LineString",
         "coordinates": [
@@ -94,7 +94,7 @@
   resource: POST /:type
   params: !!omap
     - name: :type
-      requ: P&aring;krevd
+      requ: Påkrevd
       type: string
   request: !!map
     headers: |
@@ -105,7 +105,7 @@
     payload: |
       {
         "lisens": "CC BY-NC-ND 3.0 NO",
-        "navn": "Fra H&oslash;gabu til Vaksdal",
+        "navn": "Fra Høgabu til Vaksdal",
         "status": "Offentig",
         "geojson": {
           "type": "LineString",
@@ -129,7 +129,7 @@
       "opprettet": "2013-11-14T02:15:15Z",
       "endret": "2013-11-14T02:15:15Z",
       "lisens": "CC BY-NC-ND 3.0 NO",
-      "navn": "Fra H&oslash;gabu til Vaksdal",
+      "navn": "Fra Høgabu til Vaksdal",
       "status": "Offentig",
       "geojson": {
         "type": "LineString",

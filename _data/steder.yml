@@ -11,7 +11,7 @@
   type: string
   read: Alle
   write: Ingen
-  desc: Innholdsleverand&oslash;r som har lagt inn stedet 
+  desc: Innholdsleverandør som har lagt inn stedet 
   com: Legges automatisk inn av Nasjonal Turbase
   utsted:
   uthytte:
@@ -40,8 +40,8 @@
   write: Tilbyder
   desc: Lisens for bruk og visning av stedet
   values: ["CC BY 3.0 NO", "CC BY-NC 3.0 NO", "CC BY-ND 3.0 NO", "CC BY-NC-ND 3.0 NO"]
-  utsted: P&aring;krevd
-  uthytte: P&aring;krevd
+  utsted: Påkrevd
+  uthytte: Påkrevd
 
 - name: navngivning
   type: string
@@ -57,22 +57,22 @@
   write: Tilbyder
   desc: Publiseringsstatus
   values: [Kladd, Privat, Offentlig, Slettet]
-  utsted: P&aring;krevd
-  uthytte: P&aring;krevd
+  utsted: Påkrevd
+  uthytte: Påkrevd
 
 - name: navn
   type: string
   read: Alle
   write: Tilbyder
-  desc: Navn p&aring; stedet
-  utsted: P&aring;krevd
-  uthytte: P&aring;krevd
+  desc: Navn på stedet
+  utsted: Påkrevd
+  uthytte: Påkrevd
 
 - name: navn_alt
   type: string[]
   read: Alle
   write: Tilbyder
-  desc: Alternative stavem&aring;ter av stedsnavnet
+  desc: Alternative stavemåter av stedsnavnet
   com: Ren tekst
   utsted: Anbefalt
   uthytte: Anbefalt
@@ -91,15 +91,15 @@
   write: Tilbyder
   desc: GeoJSON av typen Point
   com: Er 2D GeoJSON i dag - kan bli 3D GeoJSON
-  utsted: P&aring;krevd
-  uthytte: P&aring;krevd
+  utsted: Påkrevd
+  uthytte: Påkrevd
 
-- name: omr&aring;der
+- name: områder
   type: string[]
   read: Alle
   write: Tilbyder
-  desc: Omr&aring;der stedet ligger i
-  com: ObjectID i Omr&aring;der
+  desc: Områder stedet ligger i
+  com: ObjectID i Områder
   utsted: Anbefalt
   uthytte: Anbefalt
 
@@ -116,8 +116,8 @@
   read: Alle
   write: Tilbyder
   desc: Fylket stedet ligger i
-  utsted: P&aring;krevd
-  uthytte: P&aring;krevd
+  utsted: Påkrevd
+  uthytte: Påkrevd
 
 - name: beskrivelse
   type: string
@@ -125,8 +125,8 @@
   write: Tilbyder
   desc: Beskrivelse av stedet
   html: [h3, em, strong, p, img, a]
-  utsted: P&aring;krevd
-  uthytte: P&aring;krevd
+  utsted: Påkrevd
+  uthytte: Påkrevd
 
 - name: adkomst
   type: object
@@ -158,9 +158,9 @@
   read: Alle
   write: Tilbyder
   desc: Stedets ulike fasiliteter
-  values: [12v, 220v, Badstu, B&aring;t, Dusj, Kano, Kortbetaling, Mobildekning,
-          Peis, Servering, Steikeovn, Str&oslash;movn, Sykkel, Sykkelutleie, Telefon,
-          Teltplass, T&oslash;rkerom, Utleie, Vann, Vedovn, Wc]
+  values: [12v, 220v, Badstu, Båt, Dusj, Kano, Kortbetaling, Mobildekning,
+          Peis, Servering, Steikeovn, Strømovn, Sykkel, Sykkelutleie, Telefon,
+          Teltplass, Tørkerom, Utleie, Vann, Vedovn, Wc]
   utsted: Anbefalt
   uthytte: Anbefalt
 
@@ -182,19 +182,19 @@
 - name: lenker[#].url
   type: string
 
-- name: bygge&aring;r
+- name: byggeår
   type: number
   read: Alle
   write: Tilbyder
-  desc: "&Aring;ret hytten stod ferdig"
+  desc: Året hytten stod ferdig
   utsted:
   uthytte: Anbefalt
 
-- name: bes&oslash;ksstatisikk
+- name: besøksstatisikk
   type: string
   read: Alle
   write: Tilbyder
-  desc: Bes&oslash;ksstatisikk for stedet
+  desc: Besøksstatisikk for stedet
   com: NB! Data kommer i 2014
   utsted:
   uthytte: Anbefalt
@@ -205,9 +205,9 @@
   write: Tilbyder
   desc: 
   values: [Betjent, Servering, Selvbetjent, Ubetjent, Dagshytte,
-          N&oslash;dbu, Utleie, Stengt, Nedlagt]
+          Nødbu, Utleie, Stengt, Nedlagt]
   utsted:
-  uthytte: P&aring;krevd
+  uthytte: Påkrevd
 
 - name: tags
   type: string[]
@@ -217,10 +217,10 @@
   values: [Hytte, Fjelltopp, Gapahuk, Rasteplass, Telplass,
           Geocaching, Turpostkasse, Turorientering, Utsiktspunkt,
           Attraksjon, Badeplass, Fiskeplass, Klatrefelt, Akebakke,
-          Skitrekk, Kitested, Sk&oslash;ytevann, Toalett, Bro,
+          Skitrekk, Kitested, Skøytevann, Toalett, Bro,
           Vadested, Parkering, Holdeplass, Togstasjon]
-  utsted: P&aring;krevd
-  uthytte: P&aring;krevd
+  utsted: Påkrevd
+  uthytte: Påkrevd
 
 - name: grupper
   type: string[]
@@ -244,8 +244,8 @@
   write: Tilbyder
   desc: Tilknyttede stedsbilder
   com: ObjectID i Bilder
-  utsted: P&aring;krevd
-  uthytte: P&aring;krevd
+  utsted: Påkrevd
+  uthytte: Påkrevd
 
 - name: url
   type: string

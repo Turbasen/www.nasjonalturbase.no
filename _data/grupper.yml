@@ -10,7 +10,7 @@
   type: string
   read: Alle
   write: Ingen
-  desc: Innholdsleverand&oslash;r som har lagt inn gruppen 
+  desc: Innholdsleverandør som har lagt inn gruppen 
   com: Legges automatisk inn av Nasjonal Turbase
   ut:
 
@@ -36,7 +36,7 @@
   write: Tilbyder
   desc: Lisens for bruk og visning av gruppen
   values: ["CC BY 3.0 NO", "CC BY-NC 3.0 NO", "CC BY-ND 3.0 NO", "CC BY-NC-ND 3.0 NO"]
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: navngivning
   type: string
@@ -51,28 +51,28 @@
   write: Tilbyder
   desc: Publiseringsstatus
   values: [Kladd, Privat, Offentlig, Slettet]
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: navn
   type: string
   read: Alle
   write: Tilbyder
-  desc: Navn p&aring; gruppen
-  ut: P&aring;krevd
+  desc: Navn på gruppen
+  ut: Påkrevd
 
 - name: geojson
   type: object
   read: Alle
   write: Tilbyder
   desc: GeoJSON av typen Polygon
-  ut: P&aring;krevd
+  ut: Påkrevd
 
-- name: omr&aring;der
+- name: områder
   type: string[]
   read: Alle
   write: Tilbyder
-  desc: Omr&aring;der gruppen ligger i
-  com: ObjectID i Omr&aring;der
+  desc: Områder gruppen ligger i
+  com: ObjectID i Områder
   ut: Anbefalt
 
 - name: kommuner
@@ -87,7 +87,7 @@
   read: Alle
   write: Tilbyder
   desc: Fylker gruppen opererer i
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: organisasjonsnr
   type: string
@@ -102,7 +102,7 @@
   write: Tilbyder
   desc: Beskrivelse av gruppen
   html: [h3, em, strong, p, img, a]
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: logo
   type: string
@@ -133,7 +133,7 @@
   values: [
     Hjemmeside,
     Facebook,
-    Vilk&aring;r,
+    Vilkår,
     Rissikovurdering,
     Kontaktinfo,
     Kart
@@ -147,7 +147,7 @@
   read: Alle
   write: Tilbyder
   desc: Kontakinformasjon til gruppen
-  com: F&oslash;rste element behandles ofte som prim&aelig;rkontakt
+  com: Første element behandles ofte som primærkontakt
 
 - name: kontaktinfo[#].tittel
   type: string
@@ -195,7 +195,7 @@
     Skole,
     Turistinformasjon
   ]
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: foreldregruppe
   type: string
@@ -226,7 +226,7 @@
   write: Tilbyder
   desc: Tilknyttede gruppebilder
   com: ObjectID i Bilder
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: url
   type: string

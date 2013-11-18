@@ -10,7 +10,7 @@
   type: string
   read: Alle
   write: Ingen
-  desc: Innholdsleverand&oslash;r som har lagt inn turen 
+  desc: Innholdsleverandør som har lagt inn turen 
   comment: Legges automatisk inn av Nasjonal Turbase
   ut:
 
@@ -36,7 +36,7 @@
   write: Tilbyder
   desc: Lisens for bruk og visning av turen
   values: ["CC BY 3.0 NO", "CC BY-NC 3.0 NO", "CC BY-ND 3.0 NO", "CC BY-NC-ND 3.0 NO"]
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: navngivning
   type: string
@@ -52,14 +52,14 @@
   write: Tilbyder
   desc: Publiseringsstatus
   values: [Kladd, Privat, Offentlig, Slettet]
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: navn
   type: string
   read: Alle
   write: Tilbyder
-  desc: Navn p&aring; turen
-  ut: P&aring;krevd
+  desc: Navn på turen
+  ut: Påkrevd
 
 - name: geojson
   type: object
@@ -67,7 +67,7 @@
   write: Tilbyder
   desc: GeoJSON av typen LineString
   comment: Er 2D GeoJSON i dag - kan bli 3D GeoJSON
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: distanse
   type: number
@@ -80,16 +80,16 @@
   type: string
   read: Alle
   write: Tilbyder
-  desc: Hvilken retning turen g&aring;r i forhold til inntegningen
+  desc: Hvilken retning turen går i forhold til inntegningen
   values: [AB, BA, ABA, BAB]
   ut: Anbefalt
 
-- name: omr&aring;der
+- name: områder
   type: string[]
   read: Alle
   write: Tilbyder
-  desc: Omr&aring;der turen ligger i
-  comment: ObjectID i Omr&aring;der
+  desc: Områder turen ligger i
+  comment: ObjectID i Områder
   ut: Anbefalt
 
 - name: kommuner
@@ -104,7 +104,7 @@
   read: Alle
   write: Tilbyder
   desc: Fylket turen ligger i
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: beskrivelse
   type: string
@@ -112,7 +112,7 @@
   write: Tilbyder
   desc: Beskrivelse av turen
   html: [h3, em, strong, p, img, a]
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: adkomst
   type: string
@@ -139,15 +139,15 @@
   type: string
   read: Alle
   write: Tilbyder
-  desc: Gradering som definert i Merkeh&aring;ndboka
+  desc: Gradering som definert i Merkehåndboka
   values: [Enkel, Middels, Krevende, Ekspert]
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: passer_for
   type: string[]
   read: Alle
   write: Tilbyder
-  desc: Hvilke m&aring;lgrupper passer turen for
+  desc: Hvilke målgrupper passer turen for
   values: [Barn, Voksen, Senior]
   ut: Anbefalt
 
@@ -163,9 +163,9 @@
   type: string[]
   read: Alle
   write: Tilbyder
-  desc: Liste med m&aring;nedene turen kan tas
+  desc: Liste med månedene turen kan tas
   values: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: tidsbruk
   type: object
@@ -223,7 +223,7 @@
     Padletur,
     Klatretur,
   ]
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: grupper
   type: string[]
@@ -246,7 +246,7 @@
   write: Tilbyder
   desc: Tilknyttede tursbilder
   comment: ObjectID i Bilder
-  ut: P&aring;krevd
+  ut: Påkrevd
 
 - name: url
   type: string
