@@ -6,17 +6,7 @@ title: Nasjonal Turbase
 <div class="row">
   <div class="col-lg-4">
     <h2 class="glyphicons calendar">Siste oppdateringer</h2>
-    <div class="list-group">
-      {% for post in site.posts limit:6 %}
-      <a href="{% if post.link %}{{ site.url }}{{ post.link }}{% else %}{{ post.url }}{% endif %}"
-        class="list-group-item{% if forloop.first %} active{% endif %}">
-        <h4 class="list-group-item-heading">
-          {{ post.title }} <small>{{ post.date | date_to_string }}</small>
-        </h4>
-        <p class="list-group-item-text">{{ post.excerpt }}</p>
-      </a>
-      {% endfor %}
-    </div>
+    {% include posts-latest.html %}
   </div>
   <div class="col-lg-8">
     <div class="row">
