@@ -1,0 +1,54 @@
+- title: Åpen data
+  class: unlock
+  desc: |
+    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+    massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+    euismod. Donec sed odio dui.
+  link: lisenser.html
+
+- title: REST API
+  class: embed_close
+  desc: |
+    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+    massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+    euismod. Donec sed odio dui.
+  link: api.html
+
+- title: Utforsk data
+  class: direction
+  desc: |
+    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+    massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+    euismod. Donec sed odio dui.
+  link: #
+
+- title: Anbefalt av
+  class: cup
+  desc: |
+    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+    massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+    euismod. Donec sed odio dui.
+  link: #
+
+- title: Om oss
+  class: group
+  desc: |
+    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+    massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+    euismod. Donec sed odio dui.
+  link: kontakt.html
+
+- title: Åpen kildekode
+  class: heart
+  desc: |
+    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
+    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
+    massa justo sit amet risus. Etiam porta sem malesuada magna mollis
+    euismod. Donec sed odio dui.
+  link: #
+
