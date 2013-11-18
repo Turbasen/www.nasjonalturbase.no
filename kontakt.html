@@ -1,0 +1,21 @@
+---
+layout: default
+title: Kontakt oss
+---
+
+<div class="row">{% for kontakt in site.data.kontakt %}
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="/images/{{ kontakt.image }}" class="img-circle" alt="">
+      <div class="caption">
+        <h3>{{ kontakt.name }}</h3>
+        <p>{{ kontakt.title }}</p>
+        <p>
+          <a href="mailto:{{ kontakt.email }}" class="btn btn-primary" role="button">Epost</a>
+          <a href="tel:+47{{ kontakt.phone }}" class="btn btn-default" role="button">Mobil</a>
+        </p>
+      </div>
+    </div>
+  </div>
+{% endfor %}</div>
+
