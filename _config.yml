@@ -1,5 +1,6 @@
 name: Nasjonal Turbase
 repo: https://github.com/turistforeningen/www.nasjonalturbase.no
+ga_id: UA-45821478-1
 markdown: redcarpet
 pygments: true
 safe: true
