@@ -8,7 +8,8 @@ title: Nasjonal Turbase
     <h2 class="glyphicons calendar">Siste oppdateringer</h2>
     <div class="list-group">
       {% for post in site.posts limit:6 %}
-      <a href="{{ post.url }}" class="list-group-item{% if forloop.first %} active{% endif %}">
+      <a href="{% if post.link %}{{ site.url }}{{ post.link }}{% else %}{{ post.url }}{% endif %}"
+        class="list-group-item{% if forloop.first %} active{% endif %}">
         <h4 class="list-group-item-heading">
           {{ post.title }} <small>{{ post.date | date_to_string }}</small>
         </h4>
