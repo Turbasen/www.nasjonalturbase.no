@@ -22,3 +22,10 @@ jekyll serve -w
 git push origin gh-pages
 ```
 
+### Jekyll & Liquid
+
+* https://github.com/mojombo/jekyll/tree/master/site
+* http://jekyllrb.com/docs/variables/
+* http://jekyllrb.com/docs/templates/
+* https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
+
