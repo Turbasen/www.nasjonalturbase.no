@@ -137,3 +137,23 @@ pre.headers {
 .nav-tabs a.glyphicons {
   padding-left: 27px;
 }
+
+/* stack.html */
+.stack .logos div {
+  height: 110px;
+  background-size: contain;
+  background-repeat: no-repeat
+}
+
+.stack .logos div.node {
+  background-image: url('/images/node.png');
+}
+
+.stack .logos div.mongo {
+  background-image: url('/images/mongo.png');
+}
+
+.stack .logos div.redis {
+  background-image: url('/images/redis.png');
+}
+
