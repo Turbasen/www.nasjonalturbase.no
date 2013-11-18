@@ -1,0 +1,53 @@
+---
+layout: default
+title: Områder
+byline: Anbefalt datastandard for områder i Nasjonal Turbase
+submenu: Datastandard
+---
+
+<p></p>
+
+<p><strong>API url:</strong> api.nasjonalgruppebase.no/områder</p>
+<p><strong>Endringer:</strong> <a href="#">Se Github</a>
+
+<h2>Felter</h2>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Feltnavn</th>
+        <th>Datatype</th>
+        <!-- <th>Lese</th> -->
+        <!-- <th>Skrive</th> -->
+        <th>Beskrivelse</th>
+        <th>Kommentar</th>
+        <th>ut/gruppe</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for gruppe in site.data.omrader %}
+      <tr>
+        <td>{{ gruppe.name }}</td>
+        <td>{{ gruppe.type }}</td>
+        <!-- <td>{{ gruppe.read }}</td> -->
+        <!-- <td>{{ gruppe.write }}</td> -->
+        <td>{{ gruppe.desc }}</td>
+        <td>
+          {% if gruppe.comment %}{{ gruppe.comment }}{% endif %}
+          {% if gruppe.values %}Anbefalte verdier:<br/><ul>{% for val in gruppe.values %}
+            <li>{{ val }}</li>
+          {% endfor %}</ul>{% endif %}
+
+          {% if gruppe.html %}Anbefalt HTML:<br/><ul>{% for val in gruppe.html %}
+            <li>{{ val }}</li>
+          {% endfor %}</ul>{% endif %}
+
+        </td>
+        <td>{{ gruppe.ut }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+

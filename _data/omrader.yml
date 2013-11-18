@@ -1,0 +1,161 @@
+- name: _id
+  type: string
+  read: Alle
+  write: Ingen
+  desc: Autogenerert unik ID (ObjectID)
+  com: Legges automatisk inn av Nasjonal Turbase
+  ut:
+
+- name: tilbyder
+  type: string
+  read: Alle
+  write: Ingen
+  desc: Innholdsleverandør som har lagt inn området
+  com: Legges automatisk inn av Nasjonal Turbase
+  ut:
+
+- name: opprettet
+  type: string
+  read: Alle
+  write: Ingen
+  desc: Tid og dato for opprettet (ISO 8601)
+  com: Legges automatisk inn av Nasjonal Turbase
+  ut:
+
+- name: endret
+  type: string
+  read: Alle
+  write: Ingen
+  desc: Tid og dato for sist endret (ISO 8601)
+  com: Legges automatisk inn av Nasjonal Turbase
+  ut:
+
+- name: lisens
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Lisens for bruk og visning av området
+  values: ["CC BY 3.0 NO", "CC BY-NC 3.0 NO", "CC BY-ND 3.0 NO", "CC BY-NC-ND 3.0 NO"]
+  ut: Påkrevd
+
+- name: navngivning
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Tekst som skal vises om valgt lisens stiller krav til navngiving
+  ut: Anbefalt
+
+- name: status
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Publiseringsstatus
+  values: [Kladd, Privat, Offentlig, Slettet]
+  ut: Påkrevd
+
+- name: navn
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Navn på området
+  ut: Påkrevd
+
+- name: geojson
+  type: object
+  read: Alle
+  write: Tilbyder
+  desc: GeoJSON av typen Polygon
+  ut: Påkrevd
+
+- name: kommuner
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  ut: Anbefalt
+
+- name: fylker
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  ut: Anbefalt
+
+- name: beskrivelse
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Beskrivelse av området
+  html: [h3, em, strong, p, img, a]
+  ut: Påkrevd
+
+- name: lenker
+  type: object[]
+  read: Alle
+  write: Tilbyder
+  desc: Relevante lenker for området
+  ut: Anbefalt
+
+- name: lenker[#].tittel
+  type: string
+
+- name: lenker[#].url
+  type: string
+
+- name: tags
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Liste med tagger for området
+  ut: Anbefalt
+
+- name: foreldreområder
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Områder "over"
+  com: ObjektID i Områder
+  ut: Anbefalt
+
+- name: grupper
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Grupper som forvalter området
+  com: ObjectID i Grupper
+  ut: Anbefalt
+
+- name: privat
+  type: string
+  read: Tilbyder
+  write: Tilbyder
+  desc: Private felt
+  com: Bare synlig for tilbyder
+
+- name: bilder
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Tilknyttede områdebilder
+  com: ObjectID i Bilder
+  ut: Påkrevd
+
+- name: url
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Nettadresse til siden som opprinnelig viser området
+  ut: Anbefalt
+
+- name: kart
+  type: string
+  read: Alle
+  write: Tilbyder
+  desc: Kartblad fra m711-serien
+  ut: Anbefalt
+
+- name: turkart
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Turkart fra ymse kartprodusenter
+  ut: Anbefalt
+
