@@ -6,7 +6,7 @@ title: Kontakt oss
 <div class="row">{% for kontakt in site.data.kontakt %}
   <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
-      <img src="/images/{{ kontakt.image }}" class="img-circle" alt="">
+      <img src="/images/{{ kontakt.image }}" class="img-circle" alt="{{ kontakt.name }}">
       <div class="caption">
         <h3>{{ kontakt.name }}</h3>
         <p>{{ kontakt.title }}</p>
