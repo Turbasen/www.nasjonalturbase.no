@@ -1,4 +1,5 @@
 name: Nasjonal Turbase
+repo: https://github.com/turistforeningen/www.nasjonalturbase.no
 markdown: redcarpet
 pygments: true
 safe: true
