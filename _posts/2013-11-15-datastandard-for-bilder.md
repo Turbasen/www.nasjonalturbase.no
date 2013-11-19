@@ -9,5 +9,5 @@ link: data/bilder.html
 ---
 
 Datastandard for bilder er nå tilgjengelig. Bare arrangementer igjen, så er vi i
-må!
+mål!
 
