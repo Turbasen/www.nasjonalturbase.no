@@ -1,0 +1,53 @@
+---
+layout: default
+title: Bilder
+byline: Anbefalt datastandard for bilder i Nasjonal Turbase
+submenu: Datastandard
+---
+
+<p></p>
+
+<p><strong>API url:</strong> api.nasjonalfieldbase.no/bilder</p>
+<p><strong>Endringer:</strong> <a href="#">Se Github</a>
+
+<h2>Felter</h2>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Feltnavn</th>
+        <th>Datatype</th>
+        <!-- <th>Lese</th> -->
+        <!-- <th>Skrive</th> -->
+        <th>Beskrivelse</th>
+        <th>Kommentar</th>
+        <th>ut/bilde</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for field in site.data.bilder %}
+      <tr>
+        <td>{{ field.name }}</td>
+        <td>{{ field.type }}</td>
+        <!-- <td>{{ field.read }}</td> -->
+        <!-- <td>{{ field.write }}</td> -->
+        <td>{{ field.desc }}</td>
+        <td>
+          {% if field.comment %}{{ field.comment }}{% endif %}
+          {% if field.values %}Anbefalte verdier:<br/><ul>{% for val in field.values %}
+            <li>{{ val }}</li>
+          {% endfor %}</ul>{% endif %}
+
+          {% if field.html %}Anbefalt HTML:<br/><ul>{% for val in field.html %}
+            <li>{{ val }}</li>
+          {% endfor %}</ul>{% endif %}
+
+        </td>
+        <td>{{ field.ut }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
