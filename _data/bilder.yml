@@ -38,7 +38,7 @@
   values: ["CC BY 3.0 NO", "CC BY-NC 3.0 NO", "CC BY-ND 3.0 NO", "CC BY-NC-ND 3.0 NO"]
   ut: Påkrevd
 
-- name: navngivning
+- name: navngiving
   type: string
   read: Alle
   write: Tilbyder
@@ -84,7 +84,7 @@
 
 - name: kreditering.navn
   type: string
-  
+
 - name: kreditering.epost
   type: string
 

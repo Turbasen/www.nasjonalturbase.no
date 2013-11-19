@@ -1,4 +1,4 @@
-- name: _id 
+- name: _id
   type: string
   read: Alle
   write: Ingen
@@ -11,7 +11,7 @@
   type: string
   read: Alle
   write: Ingen
-  desc: Innholdsleverandør som har lagt inn stedet 
+  desc: Innholdsleverandør som har lagt inn stedet
   com: Legges automatisk inn av Nasjonal Turbase
   utsted:
   uthytte:
@@ -43,7 +43,7 @@
   utsted: Påkrevd
   uthytte: Påkrevd
 
-- name: navngivning
+- name: navngiving
   type: string
   read: Alle
   write: Tilbyder
@@ -203,7 +203,7 @@
   type: string
   read: Alle
   write: Tilbyder
-  desc: 
+  desc:
   values: [Betjent, Servering, Selvbetjent, Ubetjent, Dagshytte,
           Nødbu, Utleie, Stengt, Nedlagt]
   utsted:
