@@ -1,9 +1,23 @@
 ---
 layout: default
+header: false
 ---
-<h2>{{ page.title }}</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-<div class="post">
-{{ content }}
+<div class="row">
+  <div class="col-lg-8">
+    <h2>{{ page.title }}</h2>
+    <p class="meta">
+      {{ page.date | date_to_string }}
+      <img src="https://secure.gravatar.com/avatar/{{ page.gravatar }}?s=20" class="img-circle">
+      {% if page.gravatar %}
+        <a href="https://twitter.com/{{ page.twitter }}">@{{page.twitter }}</a>
+      {% endif %}
+    </p>
+    <div class="post">{{ content }}</div>
+  </div>
+  <div class="col-lg-4">
+    <h2 class="glyphicons calendar">Siste oppdateringer</h2>
+    {% include posts-latest.html %}
+  </div>
 </div>
+
