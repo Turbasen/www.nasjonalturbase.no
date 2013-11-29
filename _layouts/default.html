@@ -1,7 +1,7 @@
 {% include header.html %}
 
 <div class="container {{ page.class }}">
-  {% include title.html %}
+  {% if page.header != false %}{% include title.html %}{% endif %}
   {{ content }}
 </div>
 
