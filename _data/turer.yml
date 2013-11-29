@@ -14,14 +14,6 @@
   comment: Legges automatisk inn av Nasjonal Turbase
   ut:
 
-- name: opprettet
-  type: string
-  read: Alle
-  write: Ingen
-  desc: Tid og dato for opprettet (ISO 8601)
-  comment: Legges automatisk inn av Nasjonal Turbase
-  ut:
-
 - name: endret
   type: string
   read: Alle
