@@ -74,10 +74,10 @@
   desc: Personen som har tatt bildet (rettighetsinnhaver)
   ut: Påkrevd
 
-- name: kreditering.navn
+- name: fotograf.navn
   type: string
 
-- name: kreditering.epost
+- name: fotograf.epost
   type: string
 
 - name: tags
