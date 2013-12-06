@@ -1,6 +1,6 @@
 <div class="list-group">
   {% for post in site.posts limit:6 %}
-  <a href="{% if post.link %}/{{ post.link }}{% else %}{{ post.url }}{% endif %}"
+  <a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}"
     class="list-group-item{% if forloop.first %} active{% endif %}">
     <h4 class="list-group-item-heading">
       {{ post.title }} <small>{{ post.date | date_to_string }}</small>
