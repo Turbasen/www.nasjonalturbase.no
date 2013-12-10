@@ -124,20 +124,5 @@
     X-RateLimit-Remaining: 4999
   data: |
     {
-      "_id": "524081f9b8cb77df15001661",
-      "tilbyder": "TestAppNatur",
-      "opprettet": "2013-11-14T02:15:15Z",
-      "endret": "2013-11-14T02:15:15Z",
-      "lisens": "CC BY-NC-ND 3.0 NO",
-      "navn": "Fra Høgabu til Vaksdal",
-      "status": "Offentig",
-      "geojson": {
-        "type": "LineString",
-        "coordinates": [
-          [5.85660630854479,58.8569687273594],
-          [5.85720712338704,58.8570575064399],
-          [5.85772210753763,58.8571462852927]
-        ]
-      },
-      ...
+      "_id": "524081f9b8cb77df15001661"
     }
