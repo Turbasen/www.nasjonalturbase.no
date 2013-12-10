@@ -7,6 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- <link rel="shortcut icon" href="../../assets/ico/favicon.png"> -->
+    <link rel="alternate" type="application/rss+xml" title="Siste oppdateringer"
+    href="{{ site.url }}/feed.xml" />
 
     <title>{{ page.title }}</title>
 
@@ -55,7 +57,7 @@
                   {% assign submenu = '' %}
                 {% endif %}
               {% endif %}
-                  
+
               {% unless p.url == '/index.html' or p.hidden == true %}
                 {% if page.url == p.url %}
                   <li class="active"><a href="{{ p.url }}">{{ p.title }}</a></li>
