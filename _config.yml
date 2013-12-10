@@ -10,5 +10,6 @@ permalink: /news/:year/:month/:day/:title/
 excerpt_separator: <!--more-->
 markdown: redcarpet
 pygments: true
+timezone: NO
 
 safe: true
