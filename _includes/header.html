@@ -58,7 +58,7 @@
                 {% endif %}
               {% endif %}
 
-              {% unless p.url == '/index.html' or p.hidden == true %}
+              {% unless p.url == '/index.html' or p.url == '/feed.xml' or p.hidden == true %}
                 {% if page.url == p.url %}
                   <li class="active"><a href="{{ p.url }}">{{ p.title }}</a></li>
                 {% else %}
