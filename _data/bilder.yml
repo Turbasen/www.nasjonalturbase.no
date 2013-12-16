@@ -71,14 +71,19 @@
   type: object
   read: Alle
   write: Tilbyder
-  desc: Personen som har tatt bildet (rettighetsinnhaver)
   ut: Påkrevd
 
 - name: fotograf.navn
   type: string
+  desc: Personen som har tatt bildet
+
+- navn: fotograf.kreditering
+  type: string
+  desc: Den som eier rettighetene til bildet
 
 - name: fotograf.epost
   type: string
+  desc: Kontaktepost til fotograf eller eier
 
 - name: tags
   type: string[]
