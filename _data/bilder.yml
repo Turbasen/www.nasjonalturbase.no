@@ -77,7 +77,7 @@
   type: string
   desc: Personen som har tatt bildet
 
-- navn: fotograf.kreditering
+- name: fotograf.kreditering
   type: string
   desc: Den som eier rettighetene til bildet
 
