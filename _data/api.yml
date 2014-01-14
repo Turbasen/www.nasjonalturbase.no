@@ -38,7 +38,7 @@
     - name: gruppe
       requ: Valgfri
       type: string
-      desc: objekter tilknyttet Gruppe ID
+      desc: objekter tilknyttet ObjectID i Gruppe
   response: |
     Status: 200 OK
     X-RateLimit-Limit: 5000
