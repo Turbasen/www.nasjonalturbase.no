@@ -35,6 +35,10 @@
       requ: Valgfri
       type: string
       desc: objekter med gitt primærkategori
+    - name: gruppe
+      requ: Valgfri
+      type: string
+      desc: objekter tilknyttet Gruppe ID
   response: |
     Status: 200 OK
     X-RateLimit-Limit: 5000
