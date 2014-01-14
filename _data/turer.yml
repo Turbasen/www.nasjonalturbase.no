@@ -22,6 +22,14 @@
   comment: Legges automatisk inn av Nasjonal Turbase
   ut:
 
+- name: checksum
+  type: string
+  read: Alle
+  write: Ingen
+  desc: Caching key for bildet
+  com: Legges automatisk inn av Nasjonal Turbase
+  ut:
+
 - name: lisens
   type: string
   read: Alle

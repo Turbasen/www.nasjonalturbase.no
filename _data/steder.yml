@@ -25,6 +25,15 @@
   utsted:
   uthytte:
 
+- name: checksum
+  type: string
+  read: Alle
+  write: Ingen
+  desc: Caching key for bildet
+  com: Legges automatisk inn av Nasjonal Turbase
+  utsted:
+  uthytte:
+
 - name: lisens
   type: string
   read: Alle
