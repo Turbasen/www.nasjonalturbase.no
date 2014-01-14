@@ -30,7 +30,7 @@
     - name: after
       requ: Valgfri
       type: ISODate
-      desc: objekter endret etter data
+      desc: objekter endret etter gitt dato
     - name: tag
       requ: Valgfri
       type: string
