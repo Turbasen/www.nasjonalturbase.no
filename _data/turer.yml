@@ -26,8 +26,8 @@
   type: string
   read: Alle
   write: Ingen
-  desc: Caching key for bildet
-  com: Legges automatisk inn av Nasjonal Turbase
+  desc: Caching checksum for objektet
+  comment: Legges automatisk inn av Nasjonal Turbase
   ut:
 
 - name: lisens
