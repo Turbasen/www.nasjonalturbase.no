@@ -10,7 +10,10 @@ for Nasjonal Turbase v1-beta. Hvis du her noen problemer eller andre
 forespørsler ikke nøl med å ta kontakt.</p>
 
 {% for api in site.data.api %}
-  <h2 id="{{ api.anchor }}">{{ api.title }}</h2>
+  <h2 class="title" id="{{ api.anchor }}">
+    <a class="anchor" href="#{{ api.anchor }}">#</a>
+    {{ api.title }}
+  </h2>
 
   {% if api.desc %}<p class="desc">{{ api.desc }}</p>{% endif %}
 
