@@ -6,7 +6,7 @@
       requ: Påkrevd
       type: string
       desc: privat API key
-- title: Hent alle typer
+- title: Hent alle objekttyper
   anchor: get-types
   resource: GET /objekttyper
   response: |
