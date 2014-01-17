@@ -1,3 +1,11 @@
+- title: Autentisering
+  desc: Alle kall mot Nasjonal Turbase må autentisere seg med en gyldig API-nøkkel.
+  anchor: auth
+  params: !!omap
+    - name: api_key
+      requ: Påkrevd
+      type: string
+      desc: privat API key
 - title: Hent alle typer
   anchor: get-types
   resource: GET /objekttyper
