@@ -24,9 +24,9 @@
     ]
 - title: Hent alle objekter
   anchor: get-collection
-  resource: GET /:type
+  resource: GET /{type}
   params: !!omap
-    - name: :type
+    - name: "{type}"
       requ: Påkrevd
       type: string
     - name: limit
@@ -66,12 +66,12 @@
     }
 - title: Hent ett objekt
   anchor: get-document
-  resource: GET /:type/:_id
+  resource: GET /{type}/{id}
   params: !!omap
-    - name: :type
+    - name: "{type}"
       requ: Påkrevd
       type: string
-    - name: :_id
+    - name: "{id}"
       requ: Påkrevd
       type: string
   response: |
@@ -103,9 +103,9 @@
 
 - title: Opprett nytt objekt
   anchor: post-collection
-  resource: POST /:type
+  resource: POST /{type}
   params: !!omap
-    - name: :type
+    - name: "{type}"
       requ: Påkrevd
       type: string
   request: !!map
