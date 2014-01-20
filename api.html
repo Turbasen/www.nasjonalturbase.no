@@ -11,44 +11,46 @@ forespørsler ikke nøl med å ta kontakt.</p>
 
 <h2>Oversikt</h2>
 
-<table class="table table-bordered table-responsive">
-  <thead>
-    <tr>
-      <th>Resurs</th>
-      <th>POST</th>
-      <th>GET</th>
-      <th>PUT</th>
-      <th>PATH</th>
-      <th>DELETE</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>/obejkttyper</td>
-      <td></td>
-      <td class="success">Hent typer</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>/{type}</td>
-      <td class="success">Nytt objekt</td>
-      <td class="success">Hent liste</td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>/{type}/{id}</td>
-      <td></td>
-      <td class="success">Hent objekt</td>
-      <td class="success">Oppdater objekt</td>
-      <td class="success">Oppdater objekt</td>
-      <td class="success">Slett objekt</td>
-    </tr>
-  </body>
-</table>
+<div class="table-responsive">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Resurs</th>
+        <th>POST</th>
+        <th>GET</th>
+        <th>PUT</th>
+        <th>PATH</th>
+        <th>DELETE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>/obejkttyper</td>
+        <td></td>
+        <td class="success">Hent typer</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>/{type}</td>
+        <td class="success">Nytt objekt</td>
+        <td class="success">Hent liste</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>/{type}/{id}</td>
+        <td></td>
+        <td class="success">Hent objekt</td>
+        <td class="success">Oppdater objekt</td>
+        <td class="success">Oppdater objekt</td>
+        <td class="success">Slett objekt</td>
+      </tr>
+    </body>
+  </table>
+</div>
 
 {% for api in site.data.api %}
   <h2 class="title" id="{{ api.anchor }}">
