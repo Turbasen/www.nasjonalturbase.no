@@ -137,4 +137,22 @@
       },
       ...
     }
+- title: Erstatt ett objekt
+  anchor: put-document
+  resource: GET /{type}/{id}
+  params: !!omap
+    - name: "{type}"
+      requ: Påkrevd
+      type: string
+    - name: "{id}"
+      requ: Påkrevd
+      type: string
+  response: |
+    Status: 200 OK
+    X-RateLimit-Limit: 5000
+    X-RateLimit-Remaining: 4999
+  data: |
+    {
+      "_id": "524081f9b8cb77df15001660"
+    }
 
