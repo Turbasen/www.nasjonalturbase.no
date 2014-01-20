@@ -124,9 +124,9 @@
       "opprettet": "2013-07-07T12:27:47.000Z",
       "endret": "2013-07-07T15:11:46.000Z",
       "lisens": "CC BY-NC-ND 3.0 NO",
-      "navngivning": "Turen er levert via <a href=\"http://ut.no\">UT.no</a> og lisensiert under <a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0/no\">CC BY-NC-ND 3.0</a>",
+      "navngivning": "<a href=\"#\">Øykjafjellet</a> av <a href=\"#\">Terje Haugland</a>. Tilgjengelig under en <a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0/no\">CC BY-NC-ND 3.0</a> lisens.",
       "status": "Offentlig",
-      "navn":"Øykjafjellet - topptur med fin utsikt",
+      "navn":"Øykjafjellet",
       "geojson": {
         "type": "LineString",
         "coordinates": [
@@ -137,9 +137,9 @@
       },
       ...
     }
-- title: Erstatt ett objekt
+- title: Erstatt hele objektet
   anchor: put-document
-  resource: GET /{type}/{id}
+  resource: PUT /{type}/{id}
   params: !!omap
     - name: "{type}"
       requ: Påkrevd
