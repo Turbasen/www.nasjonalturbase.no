@@ -154,15 +154,21 @@
   uthytte: Anbefalt
 
 - name: fasiliteter
-  type: string[]
+  type: object[]
   read: Alle
   write: Tilbyder
-  desc: Stedets ulike fasiliteter
+  desc: Stedets ulike fasiliteter med kommentarer
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
+- name: fasiliteter[#].navn
+  type: string
   values: [12v, 220v, Badstu, Båt, Dusj, Kano, Kortbetaling, Mobildekning,
           Peis, Servering, Steikeovn, Strømovn, Sykkel, Sykkelutleie, Telefon,
           Teltplass, Tørkerom, Utleie, Vann, Vedovn, Wc]
-  utsted: Anbefalt
-  uthytte: Anbefalt
+
+- name: fasiliteter[#].kommentar
+  type: string
 
 - name: lenker
   type: object[]
