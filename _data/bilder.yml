@@ -65,7 +65,7 @@
   read: Alle
   write: Tilbyder
   desc: GeoJSON av typen Point
-  ut: Påkrevd
+  ut: Anbefalt
 
 - name: beskrivelse
   type: string
