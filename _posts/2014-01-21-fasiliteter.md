@@ -8,8 +8,8 @@ categories: [datastandard, steder]
 link: /data/steder.html
 ---
 
-Feltet `fasiliteter` endres fra `string[]` til `object[]` og er nå et array med
-objekter.
+Feltet `fasiliteter` endres fra `string[]` til `object` og er nå et object med
+fasiliteter.
 
 <!-- more -->
 
