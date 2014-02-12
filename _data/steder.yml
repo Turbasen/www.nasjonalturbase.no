@@ -154,10 +154,10 @@
   uthytte: Anbefalt
 
 - name: fasiliteter
-  type: object[]
+  type: object
   read: Alle
   write: Tilbyder
-  desc: Stedets ulike fasiliteter med kommentarer
+  desc: Stedets ulike fasiliteter (key) med kommentarer (value)
   utsted: Anbefalt
   uthytte: Anbefalt
 
