@@ -84,7 +84,7 @@
 
 - name: fotograf.navn
   type: string
-  desc: Personen som har tatt bildet
+  desc: Navn på fotograf
 
 - name: fotograf.telefon
   type: number
