@@ -93,7 +93,7 @@
 - name: fotograf.epost
   type: string
   desc: Epost til fotograf
-  comment: Må være en gyldig epost addresse
+  comment: Må være en gyldig epost adresse
 
 - name: eier
   type: object
@@ -113,7 +113,7 @@
 - name: eier.epost
   type: string
   desc: Epost til eier
-  comment: Må være en gyldig epost addresse
+  comment: Må være en gyldig epost adresse
 
 - name: eier.url
   type: string
