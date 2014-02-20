@@ -79,6 +79,7 @@
   type: object
   read: Alle
   write: Tilbyder
+  desc: Den personen som har tatt bildet
   ut: Påkrevd
 
 - name: fotograf.navn
