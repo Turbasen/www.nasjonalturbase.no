@@ -134,7 +134,7 @@
 
 - name: lenker[#].url
   type: string
-  com: "Må starte med http:// eller https://"
+  comment: "Må starte med http:// eller https://"
 
 - name: gradering
   type: string
@@ -254,7 +254,7 @@
   read: Alle
   write: Tilbyder
   desc: Tilknyttede steder
-  com: ObjectID i Steder
+  comment: ObjectID i Steder
   ut: Anbefalt
 
 - name: url
@@ -262,7 +262,7 @@
   read: Alle
   write: Tilbyder
   desc: Nettadresse til siden som opprinnelig viser turen
-  com: "Må starte med http:// eller https://"
+  comment: "Må starte med http:// eller https://"
   ut: Anbefalt
 
 - name: kart

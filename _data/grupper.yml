@@ -3,7 +3,7 @@
   read: Alle
   write: Ingen
   desc: Autogenerert unik ID (ObjectID)
-  com: Legges automatisk inn av Nasjonal Turbase
+  comment: Legges automatisk inn av Nasjonal Turbase
   ut:
 
 - name: tilbyder
@@ -11,7 +11,7 @@
   read: Alle
   write: Ingen
   desc: Innholdsleverandør som har lagt inn gruppen
-  com: Legges automatisk inn av Nasjonal Turbase
+  comment: Legges automatisk inn av Nasjonal Turbase
   ut:
 
 - name: endret
@@ -19,7 +19,7 @@
   read: Alle
   write: Ingen
   desc: Tid og dato for sist endret (ISO 8601)
-  com: Legges automatisk inn av Nasjonal Turbase
+  comment: Legges automatisk inn av Nasjonal Turbase
   ut:
 
 - name: checksum
@@ -72,7 +72,7 @@
   read: Alle
   write: Tilbyder
   desc: Områder gruppen ligger i
-  com: ObjectID i Områder
+  comment: ObjectID i Områder
   ut: Anbefalt
 
 - name: kommuner
@@ -141,14 +141,14 @@
 
 - name: lenker[#].url
   type: string
-  com: "Må starte med http:// eller https://"
+  comment: "Må starte med http:// eller https://"
 
 - name: kontaktinfo
   type: object[]
   read: Alle
   write: Tilbyder
   desc: Kontakinformasjon til gruppen
-  com: Første element behandles ofte som primærkontakt
+  comment: Første element behandles ofte som primærkontakt
 
 - name: kontaktinfo[#].tittel
   type: string
@@ -203,7 +203,7 @@
   read: Alle
   write: Tilbyder
   desc: Gruppen "over"
-  com: ObjektID i Grupper
+  comment: ObjektID i Grupper
   ut: Anbefalt
 
 - name: privat
@@ -211,14 +211,14 @@
   read: Tilbyder
   write: Tilbyder
   desc: Private felt
-  com: Bare synlig for tilbyder
+  comment: Bare synlig for tilbyder
 
 - name: grupper
   type: string[]
   read: Alle
   write: Tilbyder
   desc: Grupper som forvalter gruppen
-  com: ObjectID i Grupper
+  comment: ObjectID i Grupper
   ut: Anbefalt
 
 - name: bilder
@@ -226,7 +226,7 @@
   read: Alle
   write: Tilbyder
   desc: Tilknyttede gruppebilder
-  com: ObjectID i Bilder
+  comment: ObjectID i Bilder
   ut: Påkrevd
 
 - name: steder
@@ -234,7 +234,7 @@
   read: Alle
   write: Tilbyder
   desc: Tilknyttede steder
-  com: ObjectID i Steder
+  comment: ObjectID i Steder
   ut: Anbefalt
 
 - name: url
@@ -242,6 +242,6 @@
   read: Alle
   write: Tilbyder
   desc: Nettadresse til siden som opprinnelig viser gruppen
-  com: "Må starte med http:// eller https://"
+  comment: "Må starte med http:// eller https://"
   ut: Anbefalt
 
