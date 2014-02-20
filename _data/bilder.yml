@@ -87,7 +87,7 @@
   desc: Navn på fotograf
 
 - name: fotograf.telefon
-  type: number
+  type: string
   desc: Telefon til fotograf
 
 - name: fotograf.epost
@@ -107,7 +107,7 @@
   desc: Navn til eier
 
 - name: eier.telefon
-  type: number
+  type: string
   desc: Telefon til eier
 
 - name: eier.epost
