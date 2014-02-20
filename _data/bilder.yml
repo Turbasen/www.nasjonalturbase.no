@@ -127,11 +127,11 @@
   comment: "Må starte med http:// eller https://"
 
 - name: img[].width
-  type: string
+  type: number
 
 - name: img[].height
-  type: string
+  type: numner
 
 - name: img[].size
-  type: string
+  type: numner
 
