@@ -48,8 +48,8 @@
   read: Alle
   write: Tilbyder
   desc: Tekst som skal vises om valgt lisens stiller krav til navngiving
-  utsted: Anbefalt
-  uthytte: Anbefalt
+  utsted: Påkrevd
+  uthytte: Påkrevd
 
 - name: status
   type: string

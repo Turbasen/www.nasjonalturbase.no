@@ -43,7 +43,7 @@
   read: Alle
   write: Tilbyder
   desc: Tekst som skal vises om valgt lisens stiller krav til navngiving
-  ut: Anbefalt
+  ut: Påkrevd
 
 - name: status
   type: string

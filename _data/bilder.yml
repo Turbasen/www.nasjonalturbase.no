@@ -43,7 +43,7 @@
   read: Alle
   write: Tilbyder
   desc: Tekst som skal vises ved visning av bildet
-  ut: Anbefalt
+  ut: Påkrevd
 
 - name: status
   type: string

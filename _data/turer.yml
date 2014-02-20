@@ -43,8 +43,7 @@
   read: Alle
   write: Tilbyder
   desc: Tekst som skal vises om valgt lisens stiller krav til navngiving
-  comment: F.eks. "<a href='#'>Kul tur</a> av <a href='#'>Ole Nordmann</a>. Tilgjengelig under <a href='#'>CC BY-NC-SA 3.0 NO</a>"
-  ut: Anbefalt
+  ut: Påkrevd
 
 - name: status
   type: string
