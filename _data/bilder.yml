@@ -86,9 +86,9 @@
   type: string
   desc: Personen som har tatt bildet
 
-- name: fotograf.kreditering
-  type: string
-  desc: Den som eier rettighetene til bildet
+- name: fotograf.telefon
+  type: number
+  desc: Telefon til fotograf
 
 - name: fotograf.epost
   type: string
