@@ -92,7 +92,33 @@
 
 - name: fotograf.epost
   type: string
-  desc: Kontaktepost til fotograf eller eier
+  desc: Epost til fotograf
+  comment: Må være en gyldig epost addresse
+
+- name: eier
+  type: object
+  read: Alle
+  write: Tilbyder
+  desc: Den personen eller organisasjon som eier rettighetene til bildet
+  ut: Påkrevd
+
+- name: eier.navn
+  type: string
+  desc: Navn til eier
+
+- name: eier.telefon
+  type: number
+  desc: Telefon til eier
+
+- name: eier.epost
+  type: string
+  desc: Epost til eier
+  comment: Må være en gyldig epost addresse
+
+- name: eier.url
+  type: string
+  desc: URL til eier
+  comment: "Må starte med http:// eller https://"
 
 - name: tags
   type: string[]
