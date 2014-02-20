@@ -161,13 +161,13 @@
   utsted: Anbefalt
   uthytte: Anbefalt
 
-- name: fasiliteter[#].navn
+- name: fasiliteter.{key}
   type: string
   values: [12v, 220v, Badstu, Båt, Dusj, Kano, Kortbetaling, Mobildekning,
           Peis, Servering, Steikeovn, Strømovn, Sykkel, Sykkelutleie, Telefon,
           Teltplass, Tørkerom, Utleie, Vann, Vedovn, Wc]
 
-- name: fasiliteter[#].kommentar
+- name: fasiliteter.{val}
   type: string
 
 - name: lenker
