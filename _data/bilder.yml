@@ -124,6 +124,7 @@
 
 - name: img[].url
   type: string
+  com: "Må starte med http:// eller https://"
 
 - name: img[].width
   type: string

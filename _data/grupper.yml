@@ -141,6 +141,7 @@
 
 - name: lenker[#].url
   type: string
+  com: "Må starte med http:// eller https://"
 
 - name: kontaktinfo
   type: object[]
@@ -241,5 +242,6 @@
   read: Alle
   write: Tilbyder
   desc: Nettadresse til siden som opprinnelig viser gruppen
+  com: "Må starte med http:// eller https://"
   ut: Anbefalt
 

@@ -99,6 +99,7 @@
 
 - name: lenker[#].url
   type: string
+  com: "Må starte med http:// eller https://"
 
 - name: tags
   type: string[]
@@ -151,6 +152,7 @@
   read: Alle
   write: Tilbyder
   desc: Nettadresse til siden som opprinnelig viser området
+  com: "Må starte med http:// eller https://"
   ut: Anbefalt
 
 - name: kart

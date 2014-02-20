@@ -186,6 +186,7 @@
   values: [Pris, Facebook, Yr, Twitter, Instagram, Hjemmeside, Booking, Kontaktinfo]
 
 - name: lenker[#].url
+  com: "Må starte med http:// eller https://"
   type: string
 
 - name: byggeår
@@ -267,6 +268,7 @@
   read: Alle
   write: Tilbyder
   desc: Nettadresse til siden som opprinnelig viser stedet
+  com: "Må starte med http:// eller https://"
   utsted: Anbefalt
   uthytte: Anbefalt
 
