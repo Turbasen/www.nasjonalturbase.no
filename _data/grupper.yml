@@ -228,6 +228,14 @@
   com: ObjectID i Bilder
   ut: Påkrevd
 
+- name: steder
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Tilknyttede steder
+  com: ObjectID i Steder
+  ut: Anbefalt
+
 - name: url
   type: string
   read: Alle

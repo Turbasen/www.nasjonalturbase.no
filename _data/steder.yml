@@ -253,6 +253,15 @@
   utsted: Påkrevd
   uthytte: Påkrevd
 
+- name: steder
+  type: string[]
+  read: Alle
+  write: Tilbyder
+  desc: Tilknyttede steder
+  com: ObjectID i Steder
+  utsted: Anbefalt
+  uthytte: Anbefalt
+
 - name: url
   type: string
   read: Alle
