@@ -115,6 +115,13 @@
   com: ObjektID i Områder
   ut: Anbefalt
 
+- name: privat
+  type: string
+  read: Tilbyder
+  write: Tilbyder
+  desc: Private felt
+  com: Bare synlig for tilbyder
+
 - name: grupper
   type: string[]
   read: Alle
@@ -122,13 +129,6 @@
   desc: Grupper som forvalter området
   com: ObjectID i Grupper
   ut: Anbefalt
-
-- name: privat
-  type: string
-  read: Tilbyder
-  write: Tilbyder
-  desc: Private felt
-  com: Bare synlig for tilbyder
 
 - name: bilder
   type: string[]

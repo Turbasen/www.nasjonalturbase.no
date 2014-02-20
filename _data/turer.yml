@@ -225,6 +225,13 @@
   ]
   ut: Påkrevd
 
+- name: privat
+  type: string
+  read: Tilbyder
+  write: Tilbyder
+  desc: Private felt
+  comment: Bare synlig for tilbyder
+
 - name: grupper
   type: string[]
   read: Alle
@@ -232,13 +239,6 @@
   desc: Grupper som forvalter turen
   comment: ObjectID i Grupper
   ut: Anbefalt
-
-- name: privat
-  type: string
-  read: Tilbyder
-  write: Tilbyder
-  desc: Private felt
-  comment: Bare synlig for tilbyder
 
 - name: bilder
   type: string[]

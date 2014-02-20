@@ -228,6 +228,13 @@
   utsted: Påkrevd
   uthytte: Påkrevd
 
+- name: privat
+  type: string
+  read: Tilbyder
+  write: Tilbyder
+  desc: Private felt
+  com: Bare synlig for tilbyder
+
 - name: grupper
   type: string[]
   read: Alle
@@ -236,13 +243,6 @@
   com: ObjectID i Grupper
   utsted: Anbefalt
   uthytte: Anbefalt
-
-- name: privat
-  type: string
-  read: Tilbyder
-  write: Tilbyder
-  desc: Private felt
-  com: Bare synlig for tilbyder
 
 - name: bilder
   type: string[]
