@@ -197,7 +197,7 @@
   uthytte: Anbefalt
 
 - name: besøksstatisikk
-  type: string
+  type: object
   read: Alle
   write: Tilbyder
   desc: Besøksstatisikk for stedet
