@@ -16,6 +16,9 @@ Her er en oppsummert liste over endringene:
 
 ## Bilder
 
+* `fotograf.kreditering` - er fjernet.
+* `fotograf.telefon` - er lagt til og har typen `String`.
+* `eier` - er lagt til har typen `object`.
 * `img[#].url` - __må__ starte med `http://` eller `https://`.
 * `img[#].width` - er endret fra `string` til `number`.
 * `img[#].height` - er endret fra `string` til `number`.
