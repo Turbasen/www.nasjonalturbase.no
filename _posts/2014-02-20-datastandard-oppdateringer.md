@@ -35,6 +35,8 @@ Her er en oppsummert liste over endringene:
 * `steder` - er et nytt felt av typen `Array` og som inneholder tilknyttede steder.
 * `lenker[#].url` - __må__ starte med `http://` eller `https://`.
 * `url` - __må__ starte med `http://` eller `https://`.
+* `kart` - er fjernet.
+* `turkart` - er fjernet.
 
 ## Områder
 

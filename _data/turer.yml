@@ -265,17 +265,3 @@
   comment: "Må starte med http:// eller https://"
   ut: Anbefalt
 
-- name: kart
-  type: string
-  read: Alle
-  write: Tilbyder
-  desc: Kartblad fra m711-serien
-  ut: Anbefalt
-
-- name: turkart
-  type: string[]
-  read: Alle
-  write: Tilbyder
-  desc: Turkart fra ymse kartprodusenter
-  ut: Anbefalt
-
