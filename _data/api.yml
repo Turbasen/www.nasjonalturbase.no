@@ -79,7 +79,7 @@
       Content-Length: 2469
     payload: |
       {
-        "lisens": "CC BY-NC-ND 3.0 NO",
+        "lisens": "CC BY-NC 4.0",
         "navn": "Fra Høgabu til Vaksdal",
         "status": "Offentig",
         "geojson": {
@@ -123,8 +123,7 @@
       "tilbyder": "DNT",
       "opprettet": "2013-07-07T12:27:47.000Z",
       "endret": "2013-07-07T15:11:46.000Z",
-      "lisens": "CC BY-NC-ND 3.0 NO",
-      "navngivning": "<a href=\"#\">Øykjafjellet</a> av <a href=\"#\">Terje Haugland</a>. Tilgjengelig under en <a href=\"http://creativecommons.org/licenses/by-nc-nd/3.0/no\">CC BY-NC-ND 3.0</a> lisens.",
+      "lisens": "CC BY-NC 4.0",
       "status": "Offentlig",
       "navn":"Øykjafjellet",
       "geojson": {
