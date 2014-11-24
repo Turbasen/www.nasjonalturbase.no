@@ -43,7 +43,8 @@
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             {% assign submenu = '' %}
-            {% for p in site.pages %}
+            {% assign pages_sorted = site.pages | sort:"url" %}
+            {% for p in pages_sorted %}
               {% if p.submenu != submenu %}
                 {% unless submenu == '' %}</ul></li>{% endunless %}
                 {% if p.submenu %}
