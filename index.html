@@ -1,5 +1,5 @@
 ---
-layout: frontpage 
+layout: frontpage
 title: Nasjonal Turbase
 ---
 
@@ -19,7 +19,7 @@ title: Nasjonal Turbase
           {{ panel.title }}
         </h2>
         <p>{{ panel.desc }}</p>
-        <p><a class="btn btn-default" href="{% if panel.link %}{{ site.url }}{{ panel.link }}{% else %}#{% endif %}">Les mer »</a></p>
+        <p><a class="btn btn-default" href="{{ panel.link }}">Les mer »</a></p>
       </div>
     {% cycle '', '</div>' %}
   {% endfor %}</div>

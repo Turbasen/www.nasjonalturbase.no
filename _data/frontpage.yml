@@ -5,16 +5,16 @@
     tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
     massa justo sit amet risus. Etiam porta sem malesuada magna mollis
     euismod. Donec sed odio dui.
-  link: lisenser.html
+  link: /lisenser.html
 
 - title: REST API
-  class: embed_close
+  class: embed-close
   desc: |
-    Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
-    tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
-    massa justo sit amet risus. Etiam porta sem malesuada magna mollis
-    euismod. Donec sed odio dui.
-  link: api.html
+    Åpen data er mer enn bare data. Distribusjon og tilrettelgging for bruk er
+    vel så viktig. Data fra Nasjonal Turbase distribueres gjennom et moderne og
+    tidsriktig REST API. Her kan du gjøre oppslag i hele databasen, foreta
+    avanserte geo-søk, og holde dine data oppdatert.
+  link: /api.html
 
 - title: Utforsk data
   class: direction
@@ -23,25 +23,25 @@
     tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
     massa justo sit amet risus. Etiam porta sem malesuada magna mollis
     euismod. Donec sed odio dui.
-  link: #
+  link: "#"
 
-- title: Anbefalt av
-  class: cup
+- title: Disse bruker oss
+  class: quote
   desc: |
     Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
     tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
     massa justo sit amet risus. Etiam porta sem malesuada magna mollis
     euismod. Donec sed odio dui.
-  link: #
+  link: "#"
 
-- title: Om oss
+- title: Om Nasjonal Turbase
   class: group
   desc: |
     Donec id elit non mi porta gravida at eget metus. Fusce dapibus,
     tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum
     massa justo sit amet risus. Etiam porta sem malesuada magna mollis
     euismod. Donec sed odio dui.
-  link: kontakt.html
+  link: /kontakt.html
 
 - title: Åpen kildekode
   class: heart
