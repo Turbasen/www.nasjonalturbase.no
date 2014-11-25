@@ -1,3 +1,8 @@
+/*****************************************************************************/
+/*
+/* Global elements
+/*
+/*****************************************************************************/
 body {
   padding-bottom: 20px;
 }
@@ -24,15 +29,20 @@ h1, h2, h3, h4 {
   font-weight: 300;
 }
 
-h2.glyphicons {
-  padding-left: 35px;
+/*****************************************************************************/
+/*
+/* Posts
+/*
+/*****************************************************************************/
+.list-group-item.active .list-group-item-heading small {
+  color: #ddd;
 }
 
-h2.glyphicons::before {
-  margin: 5px 0 0 0;
-}
-
-/* Jumbotron */
+/*****************************************************************************/
+/*
+/* Jumbotrones
+/*
+/*****************************************************************************/
 .jumbotron h1 {
   text-transform: uppercase;
 }
@@ -63,7 +73,7 @@ h2.glyphicons::before {
 
 /* Jumbotron - Right */
 .jumbotron.right h1 { text-align: right; }
-.jumbotron.right .glyphicons.grande { float: left; padding-left: 20px; }
+.jumbotron.right .glyphicons.grande { float: left; padding-right: 20px; }
 
 /* Jumbotron Glyphicons */
 .jumbotron .glyphicons.grande {
@@ -79,7 +89,11 @@ h2.glyphicons::before {
   font-size: 200px;
 }
 
-/* Syntax Highlighting */
+/*****************************************************************************/
+/*
+/* Syntax Highlighting
+/*
+/*****************************************************************************/
 pre code {
   background: transparent !important;
 }
@@ -98,7 +112,11 @@ pre.headers {
   background-color: #f1f1f1;
 }
 
-/* API documentation */
+/*****************************************************************************/
+/*
+/* api.html
+/*
+/*****************************************************************************/
 .container.api h2.title {
   padding-top: 20px;
   position: relative;
@@ -154,28 +172,36 @@ pre.headers {
   }
 }
 
-/* lisenser.html */
-.nav-tabs a.glyphicons::before {
+/*****************************************************************************/
+/*
+/* lisenser.html
+/*
+/*****************************************************************************/
+.container.lisenser .nav-tabs a.glyphicons::before {
   margin: 10px 5px 0 5px;
   font: 18px/1em 'Glyphicons Regular';
 }
 
-.nav-tabs a.glyphicons {
+.container.lisenser .nav-tabs a.glyphicons {
   padding-left: 27px;
 }
 
-/* stack.html */
-.stack .logos div {
+/*****************************************************************************/
+/*
+/* stack.html
+/*
+/*****************************************************************************/
+.container.stack .logos div {
   height: 110px;
   background-size: contain;
   background-repeat: no-repeat
 }
 
-.stack .logos div.node {
+.container.stack .logos div.node {
   background-image: url('/images/node.png');
 }
 
-.stack .logos div.mongo {
+.container.stack .logos div.mongo {
   background-image: url('/images/mongo.png');
 }
 
