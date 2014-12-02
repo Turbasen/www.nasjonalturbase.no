@@ -11,6 +11,11 @@ body > .container {
   margin-bottom: 30px;
 }
 
+p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
 .navbar {
   margin-bottom: 0px;
 }
@@ -34,8 +39,13 @@ h1, h2, h3, h4 {
 /* Posts
 /*
 /*****************************************************************************/
-.list-group-item.active .list-group-item-heading small {
-  color: #ddd;
+.list-posts p {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.container.posts .post-content {
+  /* Nothing yet */
 }
 
 /*****************************************************************************/
@@ -49,6 +59,7 @@ h1, h2, h3, h4 {
 
 .jumbotron p {
   text-align: justify;
+  line-height: 29px;
 }
 
 /* Jumbotron - Blue */
