@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Fasiliteter for hytter"
 date: "2014-01-21 09:14:36 +0100"
 author: Hans Kristian

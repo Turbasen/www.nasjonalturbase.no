@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Velkommen"
 date: "2013-08-30 12:00:00 +0100"
 author: Hans Kristian

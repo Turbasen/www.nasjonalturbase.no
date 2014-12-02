@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Creative Commons 4.0"
 date: "2014-06-01 18:11:36 +0100"
 author: Hans Kristian

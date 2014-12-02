@@ -1,22 +1,38 @@
 ---
 layout: default
-header: false
+class: posts
 ---
 
 <div class="row">
   <div class="col-lg-8">
-    <h2>{{ page.title }}</h2>
-    <p class="meta">
-      {{ page.date | date_to_string }}
-      <img src="https://secure.gravatar.com/avatar/{{ page.gravatar }}?s=20" class="img-circle">
-      {% if page.gravatar %}
-        <a href="https://twitter.com/{{ page.twitter }}">@{{page.twitter }}</a>
+    <ul class="list-inline post-metadata">
+      <li class="post-date">
+        <span class="glyphicons glyphicons-clock" aria-hidden="true"></span>
+        {{ page.date | date_to_string }}
+      </li>
+
+      <li class="post-author">
+      {% if page.twitter %}
+        <a href="https://twitter.com/{{ page.twitter }}">@{{ page.twitter }}</a>
+      {% else %}
+        {{ page.author }}
       {% endif %}
-    </p>
-    <div class="post">{{ content }}</div>
+      </li>
+
+      <li class="post-tags">
+      {% for tag in page.tags %}
+        <span class="label label-primary">{{ tag }}</span>
+      {% endfor %}
+      </li>
+    </ul>
+
+    <div class="post-content">{{ content }}</div>
   </div>
   <div class="col-lg-4">
-    <h2 class="glyphicons calendar">Siste oppdateringer</h2>
+    <h3>
+      <span class="glyphicons glyphicons-newspaper"></span>
+      Siste oppdateringer
+    </h3>
     {% include posts-latest.html %}
   </div>
 </div>

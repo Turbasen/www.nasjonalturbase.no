@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Datastandard oppdateringer"
 date: "2014-02-20 11:46:36 +0100"
 author: Hans Kristian
 version: 1.0.0
-categories: [datastandard, bilder, grupper, turer, områder, steder]
+tags: [datastandard, bilder, grupper, turer, områder, steder]
 ---
 
 Datastandard for alle datatyper er nå oppdatert til å følge gjeldende versjon av

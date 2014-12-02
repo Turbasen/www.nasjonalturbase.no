@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Kreditering av bilder"
 date: "2013-12-16 12:10:00 +0100"
 author: Hans Kristian

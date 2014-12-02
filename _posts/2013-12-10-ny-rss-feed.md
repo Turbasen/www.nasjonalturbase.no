@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "Ny RSS feed"
 date: "2013-12-10 09:30:00 +0100"
 author: Hans Kristian
