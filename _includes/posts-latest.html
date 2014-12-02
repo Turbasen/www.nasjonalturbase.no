@@ -5,7 +5,9 @@
     <h4 class="list-group-item-heading">
       {{ post.title }} <small>{{ post.date | date_to_string }}</small>
     </h4>
-    <p class="list-group-item-text">{{ post.excerpt }}</p>
+    <p class="list-group-item-text">
+      {{ post.excerpt | remove: '<p class="lead">' | remove: '</p>' }}
+    </p>
   </a>
   {% endfor %}
 </div>
