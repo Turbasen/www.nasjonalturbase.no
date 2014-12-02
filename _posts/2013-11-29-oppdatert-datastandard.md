@@ -6,7 +6,7 @@ author: "Hans Kristian"
 gravatar: "c736f0ded2a01e0c33c1057bd7ddf682"
 twitter: "starefossen"
 version: 1.0.0
-categories: ["datastandard"]
+tags: ["datastandard"]
 ---
 
 Feltet <code>.opprettet</code> er nå fjernet fra alle datastandarder. Oppdatert

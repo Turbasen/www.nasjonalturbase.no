@@ -4,7 +4,7 @@ title: "Datastandard for bilder"
 date: "2013-11-19 12:00:00 +0100"
 author: Hans Kristian
 version: 1.0.0
-categories: [datastandard, bilder]
+tags: [datastandard, bilder]
 link: /data/bilder.html
 ---
 

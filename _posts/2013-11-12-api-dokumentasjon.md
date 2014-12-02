@@ -4,7 +4,7 @@ title: "Ny API dokumentasjon"
 date: "2013-11-12 12:00:00 +0100"
 author: Hans Kristian
 version: 1.0.0
-categories: [api]
+tags: [api]
 link: /api.html
 ---
 

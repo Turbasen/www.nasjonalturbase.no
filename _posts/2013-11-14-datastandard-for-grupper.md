@@ -4,7 +4,7 @@ title: "Datastandard for grupper"
 date: "2013-11-14 12:00:00 +0100"
 author: Hans Kristian
 version: 1.0.0
-categories: [datastandard, grupper]
+tags: [datastandard, grupper]
 link: /data/grupper.html
 ---
 

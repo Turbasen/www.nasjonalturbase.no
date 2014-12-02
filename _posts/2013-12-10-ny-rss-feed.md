@@ -4,7 +4,7 @@ title: "Ny RSS feed"
 date: "2013-12-10 09:30:00 +0100"
 author: Hans Kristian
 version: 1.0.0
-categories: [oppdateringer, dokumentasjon]
+tags: [oppdateringer, dokumentasjon]
 link: /feed.xml
 ---
 
