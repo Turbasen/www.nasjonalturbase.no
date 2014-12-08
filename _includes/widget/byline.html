@@ -1,0 +1,33 @@
+<div class="widget-byline">
+  <ul class="list-inline text-muted">
+
+    {% if page.date %}
+    <!-- byline-date-published -->
+    <li class="byline-date-published"><small>
+      <span class="glyphicons glyphicons-clock" aria-hidden="true"></span>
+      Først publisert {{ page.date | date_to_long_string }}
+    </small></li>
+    {% endif %}
+
+    {% if page.update %}
+    <!-- byline-date-modified -->
+    <li class="byline-date-modified"><small>
+      <span class="glyphicons glyphicons-history" aria-hidden="true"></span>
+      Sist oppdatert {{ page.update | date_to_long_string }}
+    </small></li>
+    {% endif %}
+
+    {% if page.tags %}
+    <!-- byline-tags -->
+    <li class="byline-tags"><small>
+      <span class="glyphicons glyphicons-tags" aria-hidden="true"></span>
+
+      {% for tag in page.tags %}
+      <span class="label label-default">{{ tag | capitalize }}</span>
+      {% endfor %}
+    </small></li>
+    {% endif %}
+
+  </ul>
+</div>
+
