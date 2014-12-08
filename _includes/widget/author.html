@@ -1,0 +1,23 @@
+<div class="widget-authors">
+  <h4>Av</h4>
+
+  {% for a in include.authors %}
+  <div class="widget-author">
+    <img src="{{ a.image }}" alt="{{ a.name }}" class="img-circle pull-left">
+
+    <ul class="list-unstyled">
+      <li class="author-title"><small>{{ a.title }}</small></li>
+      <li class="author-name">{{ a.name }}</li>
+      {% if a.twitter %}
+      <li class="author-twitter"><small>
+        <a href="https://twitter.com/{{ a.twitter }}">
+          <span class="social social-twitter"></span>
+          @{{ a.twitter }}
+        </a>
+      </small></li>
+      {% endif %}
+    </ul>
+  </div>
+  {% endfor %}
+</div>
+

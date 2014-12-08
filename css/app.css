@@ -34,6 +34,33 @@ h1, h2, h3, h4 {
   font-weight: 300;
 }
 
+
+/*****************************************************************************/
+/*
+/* Widget: Authors
+/*
+/*****************************************************************************/
+.widget-authors {
+  min-height: 80px;
+}
+
+.widget-authors .widget-author img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.widget-authors .widget-author a:hover {
+  text-decoration: none;
+}
+
+.widget-authors .widget-author .author-name {
+  font-weight: bold;
+}
+
+.widget-authors .widget-author .author-twitter span.social {
+  line-height: 17px;
+}
+
 /*****************************************************************************/
 /*
 /* Posts
