@@ -5,17 +5,19 @@ hljs.initHighlightingOnLoad();
 $('.thumbnail-preview').on('click', function(e) {
   e.preventDefault();
 
-  var width = $(this).css('width');
-  var orgWidth = $(this).data('orgWidth') || '';
+  var parent = $(this).parent();
+
+  var width = parent.css('width');
+  var orgWidth = parent.data('orgWidth') || '';
 
   if (orgWidth) {
-    $(this).data('orgWidth', '');
-    $(this).animate({ 'width': orgWidth }, function() {
-      $(this).css('width', '');
+    parent.data('orgWidth', '');
+    parent.animate({ 'width': orgWidth }, function() {
+      parent.css('width', '');
     });
   } else {
-    $(this).data('orgWidth', width);
-    $(this).animate({ 'width': '100%' });
+    parent.data('orgWidth', width);
+    parent.animate({ 'width': '100%' });
   }
 });
 
