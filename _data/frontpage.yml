@@ -10,10 +10,9 @@
 - title: REST API
   class: embed-close
   desc: |
-    Åpen data er mer enn bare data. Distribusjon og tilrettelgging for bruk er
-    vel så viktig. Data fra Nasjonal Turbase distribueres gjennom et moderne og
-    tidsriktig REST API. Her kan du gjøre oppslag i hele databasen, foreta
-    avanserte geo-søk, og holde dine data oppdatert.
+    Åpen data er bare så åpen som den er tilgjengelig. Data fra Nasjonal Turbase
+    distribueres gjennom et moderne REST API hvor du kan legge inn og oppdatere
+    data, eller gjøre oppslag i hele databasen med avanserte geo-søk.
   link: /api.html
 
 - title: Utforsk data
