@@ -12,7 +12,6 @@ body > .container {
 }
 
 p {
-  font-size: 16px;
   line-height: 22px;
 }
 
@@ -29,11 +28,6 @@ footer ul li {
   margin-right: 20px;
 }
 
-h1, h2, h3, h4 {
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", sans-serif;
-  font-weight: 300;
-}
-
 /*****************************************************************************/
 /*
 /* Glyphicons override
@@ -41,7 +35,7 @@ h1, h2, h3, h4 {
 /*****************************************************************************/
 small .glyphicons,
 small .social {
-  line-height: 17px;
+  line-height: 19px;
 }
 
 /*****************************************************************************/
