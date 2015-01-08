@@ -15,6 +15,11 @@ p {
   line-height: 22px;
 }
 
+p.prototype {
+  font-family: "Redacted Script";
+  color: #999;
+}
+
 .navbar {
   margin-bottom: 0px;
 }
