@@ -160,7 +160,7 @@
   type: string
 
 - name: kontaktinfo[#].postnummer
-  type: number
+  type: string
 
 - name: kontaktinfo[#].poststed
   type: string
