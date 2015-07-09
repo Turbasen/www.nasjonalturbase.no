@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Datastandard oppdateringer"
+title: "Datastandard oppdatering"
 date: "2014-02-20 11:46:36 +0100"
 author: Hans Kristian
 version: 1.0.0
