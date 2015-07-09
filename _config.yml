@@ -12,10 +12,11 @@ markdown: redcarpet
 highlighter: pygments
 timezone: NO
 
-safe: true
+repository: Turistforeningen/www.nasjonalturbase.no
 
 gems:
+- jekyll-github-metadata
 - jekyll-mentions
-- jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
+- jemoji

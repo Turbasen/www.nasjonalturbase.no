@@ -5,6 +5,7 @@ dev:
     ports:
         - "4000:4000"
     command: jekyll serve -d /_site --watch --force_polling -H 0.0.0.0 -P 4000
+    env_file: .env
     environment:
         - VIRTUAL_HOST=www.turbasen.privat
         - VIRTUAL_PORT=4000

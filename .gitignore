@@ -12,8 +12,8 @@ pids
 logs
 results
 
-.vagrant/
 _site/
+.env
 
 .DS_Store
 .idea
@@ -23,4 +23,3 @@ _site/
 *.sublime-project
 *.sublime-workspace
 *.cache
-*.mpc
