@@ -1,6 +1,6 @@
 name: Nasjonal Turbase
 description: 'Dokumentasjon for Nasjonal Turbase'
-cdn: http://cdn.turistforeningen.no
+cdn: https://s3-eu-west-1.amazonaws.com/turistforeningen
 terms: https://docs.google.com/document/d/13aB_C9CGDYYUvfbVgSwjpHnzoUx2uR2NmeEvk7OGnZU/pub
 ga_id: UA-45821478-1
 encoding: UTF-8
