@@ -16,9 +16,7 @@ containing information about the project and how to access and input data to it.
 Run the Jekyll website locally over port 4000.
 
 ```shell
-vagrant up
-vagrant ssh
-jekyll serve --watch --force_polling --host 0.0.0.0
+$ docker-compose up
 ```
 
 ## Jekyll & Liquid
