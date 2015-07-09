@@ -215,6 +215,7 @@ pre.headers {
 
 @media (min-width: 992px) {
   .container.api .panel.affix {
+    position: fixed !important;
     width: 220px;
     top: 0px;
   }
@@ -222,7 +223,8 @@ pre.headers {
 
 @media (min-width: 1200px) {
   .container.api .panel.affix {
-    width: 270px;
+    position: fixed !important;
+    width: 262px;
     top: 0px;
   }
 }
