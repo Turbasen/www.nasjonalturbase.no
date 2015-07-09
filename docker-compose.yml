@@ -1,0 +1,16 @@
+dev:
+    image: starefossen/github-pages
+    volumes:
+        - .:/usr/src/app
+    ports:
+        - "4000:4000"
+    command: jekyll serve -d /_site --watch --force_polling -H 0.0.0.0 -P 4000
+    environment:
+        - VIRTUAL_HOST=www.turbasen.privat
+        - VIRTUAL_PORT=4000
+
+aspell:
+    image: starefossen/aspell
+    entrypoint: aspell
+    volumes:
+        - _posts:/_posts
