@@ -29,4 +29,3 @@ jekyll serve --watch --force_polling --host 0.0.0.0
 * https://github.com/Shopify/liquid/wiki/Liquid-for-Designers
 
 ## [MIT Licensed](https://raw.githubusercontent.com/Turistforeningen/www.nasjonalturbase.no/gh-pages/LICENSE)
-

@@ -23,4 +23,3 @@ $('.thumbnail-preview').on('click', function(e) {
 
 // Enable all tooltips by default
 $('a[data-toggle="tooltip"]').tooltip();
-
