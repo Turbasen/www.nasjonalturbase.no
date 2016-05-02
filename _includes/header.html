@@ -76,7 +76,12 @@
             {% endfor %}
             {% unless submenu == '' %}</ul></li>{% endunless %}
           </ul>
-          </div><!--/.navbar-collapse -->
+          <form class="navbar-form navbar-right" role="login">
+            <a href="{{ site.urls.developer_login }}" class="btn btn-primary">
+              Logg inn
+            </a>
+          </form>
+        </div><!--/.navbar-collapse -->
       </div>
     </nav>
 

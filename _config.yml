@@ -5,6 +5,14 @@ terms: https://docs.google.com/document/d/13aB_C9CGDYYUvfbVgSwjpHnzoUx2uR2NmeEvk
 ga_id: UA-45821478-1
 encoding: UTF-8
 
+urls:
+    dev: https://dev.nasjonalturbase.no
+    developer: https://developer.nasjonalturbase.no
+    developer_login: https://developer.nasjonalturbase.no/login/github
+    prod: https://api.nasjonalturbase.no
+    terms: https://docs.google.com/document/d/13aB_C9CGDYYUvfbVgSwjpHnzoUx2uR2NmeEvk7OGnZU/pub
+    www: http://www.nasjonalturbase.no
+
 relative_permalinks: false
 permalink: /nyheter/:year/:month/:day/:title/
 excerpt_separator: <!--more-->
