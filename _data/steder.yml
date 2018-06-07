@@ -221,7 +221,7 @@
   read: Alle
   write: Tilbyder
   desc: Liste med tagger for stedet
-  values: [Hytte, Fjelltopp, Gapahuk, Rasteplass, Telplass,
+  values: [Hytte, Fjelltopp, Gapahuk, Rasteplass, Teltplass,
           Geocaching, Turpostkasse, Turorientering, Utsiktspunkt,
           Attraksjon, Badeplass, Fiskeplass, Klatrefelt, Akebakke,
           Skitrekk, Kitested, Skøytevann, Toalett, Bro,
